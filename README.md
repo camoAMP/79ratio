@@ -18,23 +18,25 @@ Your project is live at:
 
 ## Cloudflare Pages CI/CD
 
-Automated builds and deployments to Cloudflare Pages run through `.github/workflows/cloudflare-pages.yml`. Every push or pull request against `main`/`master` will install dependencies, run `npm run build:cloudflare` (which adapts the Next.js app into a worker bundle), and publish the contents of `.open-next` via `cloudflare/pages-action@v1`.
+Cloudflare Pages builds run in Cloudflare when the repo is connected (no API keys required). Set the Pages **Build command** to `npm run build`, the **Build output directory** to `out`, and leave the **Deploy command** empty. The site is exported statically via `output: "export"` in `next.config.mjs`.
 
-### Configure GitHub secrets
+### Optional GitHub Actions deploy (requires API keys)
 
-1. In your repository settings add `CLOUDFLARE_ACCOUNT_ID` with the account ID from the Cloudflare dashboard.
-2. Create an API token with the **Cloudflare Pages** edit permission (plus **Workers KV:Edit** if you use KV) scoped to that account, and add it as `CLOUDFLARE_API_TOKEN`.
-3. Trigger the workflow with a push, PR, or the **Run workflow** button under Actions.
+Automated builds and deployments to Cloudflare Pages run through `.github/workflows/cloudflare-pages.yml` when `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` are configured.
+
+1. Create an API token with **Cloudflare Pages:Edit** (plus **Workers KV:Edit** if you use KV) scoped to the account, and add it as `CLOUDFLARE_API_TOKEN`.
+2. Add `CLOUDFLARE_ACCOUNT_ID`.
+3. Trigger the workflow with a push to `main`/`master` or the **Run workflow** button under Actions.
 
 ### Manual deploy from your workstation
 
 ```bash
 npm ci
-npm run build:cloudflare
-npx wrangler pages deploy .open-next --project-name 79ratio
+npm run build
+npx wrangler pages deploy out --project-name 79ratio
 ```
 
-`npm run build:cloudflare` uses `@opennextjs/cloudflare` to emit `.open-next/_worker.js`, which is required for Cloudflare Pages' worker runtime. Make sure your local environment has `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` configured (either via `wrangler login` or environment variables) before running the deploy command.
+Make sure your local environment has `CLOUDFLARE_API_TOKEN` configured (either via `wrangler login` or environment variables) before running the deploy command.
 
 ## Build your app
 
