@@ -1,115 +1,96 @@
 # Who We're For
 
-## Entry
-
-### Headline
-We're not the right partner for every organization.
-
-### Sub-headline
-And that's intentional.
-
-Our approach works best when mindset and goals align.
-
----
-
 ## Why Fit Matters
 
-Partnerships fail more from **misalignment** than competence.
+Partnerships succeed when mindset aligns. When you value the same things and approach problems the same way, trust happens naturally. Everything else becomes easier.
 
-When expectations differ around planning, risk, or long-term thinking, even good work feels frustrating.
-
-This page helps determine fit early.
+We're intentionally selective because misalignment frustrates everyone.
 
 ---
 
 ## Who We're For
 
-### Headline
-79 Ratio works best with organizations that:
+We work best with organizations that:
 
-- See technology as critical
-- Value stability, clarity, long-term thinking
-- Want fewer surprises
-- Prefer intentional systems
-- Address root causes
-- Expect technology to be dependable
+- View technology as enabling strategy, not constraining it
+- Value stability and clarity over quick fixes
+- Understand that building resilience takes time
+- Want visibility into risk and dependencies
+- Believe systems should be intentional, not accidental
+- Pursue root causes instead of symptoms
+
+When mindset and values align, partnership works. When they don't, no approach fixes it.
 
 ---
 
-## What These Organizations Care About
+## What These Organizations Prioritize
 
-They often prioritize:
+- Reducing operational and security risk
+- Making confident decisions backed by understanding
+- Supporting growth without increasing fragility
+- Leadership-level clarity into technology
+- Sustainable, continuous improvement
 
-- Reducing operational + security risk
-- Making confident decisions
-- Supporting growth without fragility
-- Leadership-level visibility
-- Sustainable evolution
-
-They may not know **what** should change — but know current state isn't sustainable.
+They may not know the exact solution. But they know the current state isn't sustainable and want partnership around changing it.
 
 ---
 
 ## Who We're Not a Fit For
 
-### Headline
-We may not be the right fit if:
+It's worth being direct: we're probably not the right fit if:
 
-- Cost is the main driver
-- Looking for reactive-only support
+- Primary driver is absolute lowest cost
+- You need only reactive, incident-based support
+- Short-term fixes matter more than long-term stability
 - Planning feels unnecessary
-- Want quick fixes
-- Prefer minimal involvement
+- You prefer to minimize your own involvement in decisions
 
-This isn't a judgment — just alignment.
-
----
-
-## A Note On Growth & Transitions
-
-Organizations often come to us when:
-
-- Growth increases complexity
-- Risk evolves
-- Compliance pressure rises
-- Leadership expectations shift
-- Current support isn't enough
-
-These are signals, not problems.
+This isn't judgment. It's honesty about different approaches.
 
 ---
 
-## How We Typically Engage
+## When Organizations Find Us
 
-Aligned relationships usually look like:
+Most engage with us when:
 
-- Long-term stewardship
-- Ongoing lifecycle management
-- Security treated as business function
-- Context-driven decisions
-- Technology fading into background
+- Growth increased complexity faster than systems adapted
+- Risk evolved in ways current support didn't address
+- Compliance expectations became more demanding
+- Leadership clarity about technology became critical
+- Existing vendor relationship stopped keeping pace
 
-Goal: **confidence**, not dependence.
+These aren't failures. They're signals of growth.
 
 ---
 
-## If You're Unsure
+## What Partnership Looks Like
 
-Many clients began with a simple conversation to explore alignment.
+With aligned organizations, engagement typically includes:
+
+- Long-term stewardship, not transaction-based support
+- Lifecycle management as continuous practice
+- Security treated as a business function, not a checklist
+- Decisions informed by context and clarity
+- Technology becoming stable and predictable
+
+Success looks like confidence replacing anxiety. Not because problems vanish, but because you understand them and manage them intentionally.
+
+---
+
+## If You're Not Sure
+
+Many of our strongest partnerships began with a simple conversation to test fit. That's what the initial talk is for.
 
 ---
 
 ## Next Steps
 
-- Talk through your situation
-- Explore challenges we help solve
-- Request an assessment
-
-[Talk through your situation](#contact) | [Request an assessment](#contact)
+- [Talk through how fit might work](#contact)
+- [Request a conversation about your approach](#contact)
+- [Explore challenges we help solve](#contact)
 
 ---
 
 ## Close
 
-The right partner fits how your organization thinks.
-When alignment exists, everything works better.
+The right partner thinks the way you do about technology and risk. When that alignment exists, everything gets easier.

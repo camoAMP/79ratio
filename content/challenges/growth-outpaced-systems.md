@@ -3,88 +3,80 @@
 ## Entry
 
 ### Headline
-When growth outpaces systems, pressure shows up everywhere.
+When growth outpaces systems, pressure accumulates everywhere.
 
 ### Sub-headline
-Not because growth is a problem — but because the systems supporting it were never designed to scale.
+Not because growth is a problem—but because the systems supporting it weren't designed to scale.
 
 ---
 
 ## What This Looks Like
 
-When systems lag behind growth, symptoms become familiar:
+When infrastructure lags behind organizational growth, the strain shows quietly:
 
-- Processes feel strained
-- Teams rely on manual steps
-- Technology feels "maxed out"
-- Change requires too many people
-- Growth creates stress vs. momentum
-
-The business is succeeding — but the foundation beneath it is feeling the weight.
+- Processes feel strained and manual steps multiply.
+- Teams coordinate more than they execute.
+- Technology feels stretched beyond its intended capacity.
+- Scaling changes requires alignment across too many people.
+- Growth creates operational weight instead of momentum.
 
 ---
 
 ## The Real Cause
 
 ### Headline
-Growth exposes the limits of systems built for a smaller organization.
+Growth exposes the limits of systems built for yesterday's organization.
 
-Most systems are built to solve today's problems — not future ones. As headcount and complexity increase, early design decisions reveal their limits.
+Systems are designed for today's problems, not future ones. As headcount, complexity, and ambition increase, early architectural decisions reveal their constraints. The environment becomes rigid—difficult to change, expensive to maintain, and fragile under new demands.
 
 ---
 
 ## Why This Matters
 
-- Teams coordinate more than they execute
-- Leadership attention moves to operational friction
-- Risk increases as workarounds multiply
-- Growth becomes exhausting
-- Success feels fragile
+- Teams spend cycles coordinating instead of executing.
+- Leadership attention shifts to operational friction instead of strategy.
+- Risk multiplies quietly as workarounds accumulate.
+- Growth becomes exhausting rather than energizing.
+- What felt scalable at one size feels brittle at the next.
 
 ---
 
 ## The 79 Ratio Perspective
 
-Growth doesn't fail — systems fail to adapt.
-
-At 79 Ratio, we design technology with future states in mind. We ask not just "does this solve today's problem?" but "how will this scale when the company is 2x or 5x the size it is now?"
+Growth doesn't fail—infrastructure fails to evolve. We design with future states in mind. Not "what solves today's problem?" but "how will this work when the company is 2x or 5x its current size?" Every decision is evaluated for durability across growth stages.
 
 ---
 
 ## What Changes
 
-When technology is intentionally designed for growth:
+When technology is intentionally designed for scaling:
 
-- Growth feels supported, not like a burden to systems
-- Processes stay clear as team size increases
-- Technology adapts without requiring complete reinvention
-- Risk stays visible and manageable
-- Leadership focuses on direction and strategy, not firefighting
+- Growth feels supported, not like a burden on systems.
+- Processes remain clear and predictable as team size increases.
+- Infrastructure adapts without requiring complete redesign.
+- Risk stays visible and manageable.
 
 ---
 
 ## Should You Act?
 
-Consider whether any of this describes your situation:
+Consider this relevant if:
 
-- Growth accelerated in recent years
-- Systems feel strained and tight
-- Teams rely on manual work and exceptions
-- Scaling requires disproportionate effort
-- You're starting to feel the limits of current infrastructure
+- Growth accelerated significantly in recent years.
+- Current systems feel stretched and tight.
+- Teams rely on manual work and workarounds.
+- Scaling requires disproportionate effort.
 
 ---
 
 ## Next Steps
 
-- Talk through how growth affects your systems
-- Request a scalability assessment
-- Learn how we design systems for growth
-
-[Talk through your situation](#contact) | [Request a scalability assessment](#contact)
+- [Talk through how growth affects your systems](#contact)
+- [Request a scalability assessment](#contact)
+- [Learn how we design systems for growth](#contact)
 
 ---
 
 ## Close
 
-Growth should create opportunity — not expose hidden limits.
+Growth creates opportunity. Systems should support it, not constrain it.

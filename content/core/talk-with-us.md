@@ -1,108 +1,80 @@
 # Talk With Us
 
-## Entry
+## Why a Conversation Matters
 
-### Headline
-A conversation is often the right first step.
+Every organization is different. Your priorities, constraints, and opportunities are unique to you. We don't have a standard playbook that "works for everyone."
 
-### Sub-headline
-Not a sales pitch.  
-Not a commitment.  
-Just a chance to talk through what's going on.
-
----
-
-## What This Conversation Is (And Isn't)
-
-Reaching out doesn't mean you're ready to change anything.
-It simply means you're:
-
-- Noticing patterns
-- Asking questions
-- Wanting clarity
-
-**This conversation is:**
-- Calm
-- Exploratory
-- Focused on context
-
-**This conversation is NOT:**
-- A scripted call
-- A pressure-driven consultation
-- A commitment
-
-Our goal: understand whether we can be helpful — and whether our approach fits.
+A conversation lets us understand what matters so we can calibrate how best to help.
 
 ---
 
 ## What We'll Talk About
 
-Common themes:
+When we connect, we'll explore:
 
-- What prompted you to take a closer look
-- Where things feel uncertain, fragile, or heavy
-- How decisions are made
-- What matters to leadership
-- Whether clarity or lifecycle thinking would help
+### Your Current Situation
+- What's working in your technology environment?
+- Where are you feeling pressure or uncertainty?
+- What triggered the interest in talking now?
 
-You don't need to prepare anything.
+### Your Business Direction
+- Where is the organization heading?
+- What capabilities do you need technology to enable?
+- What matters most over the next 12-18 months?
 
----
+### How We Might Help
+- Does a diagnostic phase make sense?
+- What would clarity about your environment enable?
+- What's the right pace for addressing priorities?
 
-## How This Usually Goes
-
-1. **We listen** — you explain what's happening
-2. **We ask questions** — to understand actual behavior
-3. **We reflect back clarity** — often helpful immediately
-4. **We discuss fit** — either direction has value
-
----
-
-## Who This Is Most Helpful For
-
-Useful for organizations where:
-
-- Something feels "off"
-- Technology discussions feel heavy
-- Risk or complexity increased
-- Existing support feels insufficient
-- Clarity is needed before decisions
-
-If everything feels stable — that's good too.
+### Next Steps
+- If there's a fit, what would an engagement look like?
+- What questions do you still have?
 
 ---
 
-## Options For Continuing
+## Our Perspective
 
-If alignment exists:
+Not every organization is ready for this kind of engagement. We're looking for:
 
-- Structured assessment
-- Clarity, risk, or lifecycle review
-- Additional stakeholder conversations
+- **Belief that technology matters.** You understand that intentional management of technology enables strategy instead of constraining it.
+- **Commitment to systems thinking.** You're interested in how parts fit together, not just individual fixes.
+- **Openness to change.** You're willing to evolve how you manage technology if it aligns with business goals.
+- **Realistic timeline.** You understand that building clarity and resilience takes time, not weeks.
 
-No next step moves forward without intention.
+If this describes your organization, we should talk.
 
 ---
 
 ## How to Reach Us
 
-**Option 1:** [Talk through your situation](#contact)  
-**Option 2:** [Request an assessment](#contact)  
-**Option 3:** [Ask a quick question](#contact)
+Pick whichever way feels most natural to reach out:
+
+### Email
+Send a note to **hello@79ratio.com** with a brief description of your situation. Include what prompted you to look for support and what you're hoping to understand better.
+
+### Phone
+Call **[phone number here]** during business hours. Or leave a message with some context, and we'll call back promptly.
+
+### Calendar
+If you prefer scheduling directly, pick a time on **[calendar link here]** that works for you.
 
 ---
 
-## A Final Note
+## What Happens After You Reach Out
 
-You don't need a crisis.  
-You don't need to know the solution.  
-You don't need to be ready to change.
+1. **We listen.** You'll hear from us within 24 business hours with a brief confirmation and some initial thoughts based on what you shared.
 
-Sometimes the most valuable thing is clarity.
+2. **We schedule a conversation.** We'll set up a meeting at a time that works for both of us, typically within the week.
+
+3. **We talk it through.** In that conversation, we'll learn about your situation, answer questions, and discuss whether working together makes sense.
+
+4. **We decide together.** If it looks like a good fit, we'll discuss what an engagement might look like. If it's not the right fit, we'll be direct about that.
+
+No pressure. No lengthy discovery process before you decide. Just a straightforward conversation.
 
 ---
 
-## Close
+## One More Thing
 
-Good technology conversations feel steady — not urgent.
-If you're ready to talk, we're here.
+We're selective about who we work with. We're not here to be technology vendors. We're looking for long-term partnerships where clarity and strategic alignment matter. If that resonates with how you think about technology, let's talk.

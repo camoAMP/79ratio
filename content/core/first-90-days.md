@@ -1,141 +1,104 @@
-# The First 90 Days
+# First 90 Days
 
-## Entry
+## Why the First 90 Days Matter
 
-### Headline
-The first 90 days are about clarity, not disruption.
+The first 90 days aren't about transformation. They're about establishing understanding. Many organizations operate in the dark about their own environments—knowing things work but uncertain why, clear on problems but unclear on causes, confident in people but anxious about systems.
 
-### Sub-headline
-Before anything meaningful improves, the environment must be understood — not rushed.
+The first 90 days change that. You move from uncertainty to clarity about what actually matters.
 
 ---
 
-## Why The First 90 Days Matter
+## What Happens in the First 90 Days
 
-Most technology relationships struggle early:
+We focus on three goals: *See the environment clearly.* *Identify where actual risk lives.* *Establish a roadmap for what's next.*
 
-- Organizations want improvement fast
-- Providers want to demonstrate value
-- Both sides feel pressure to "do something"
+### Week 1-2: Establish Context
 
-We take a different approach:
-The first 90 days establish **understanding, structure, and trust**.
+We start by understanding:
 
----
+- Your business priorities and growth plans
+- Current technology landscape and ownership
+- Known pain points and areas of concern
+- Existing documentation and processes
+- Team capabilities and constraints
 
-## Phase 1: Orientation & Understanding
+### Week 3-4: Structured Assessment
 
-**Timeline:** Weeks 1–4  
-**Focus:** Seeing the environment as it actually exists.
+Initial investigation expands to complete assessment:
 
-We learn:
-- Current system structure
-- How tech supports or constrains operations
-- Where fragility or risk is accumulating
-- How decisions were historically made
-- What matters to leadership
+- Deep dive into infrastructure, applications, and data
+- Security and compliance posture review
+- Disaster recovery and backup capabilities
+- Integration and dependency mapping
+- Knowledge capture through interviews
 
-This is orientation — not an audit.
+### Week 5-6: Risk and Gap Analysis
 
-**Clients usually notice:**
-- Fewer assumptions
-- Better questions
-- A sense of finally being "seen" clearly
+We synthesize findings into clarity:
 
----
+- Identify where actual risk concentrates
+- Map gaps between current and necessary state
+- Assess technical depth and organizational capability
+- Prioritize by business impact
 
-## Phase 2: Structure & Visibility
+### Week 7-8: Draft Roadmap
 
-**Timeline:** Weeks 5–8  
-**Focus:** Bringing clarity.
+With understanding in place, strategy emerges:
 
-This includes:
-- Clarifying system relationships and dependencies
-- Establishing baseline documentation
-- Identifying priority risks and constraints
-- Aligning security + operations with business reality
+- Define stages and phases for improvements
+- Align technology decisions with business priorities
+- Estimate effort and timeline
+- Clarify dependencies and sequencing
 
-Goal: shared understanding.
+### Week 9-12: Recommend and Plan
 
-**Clients usually notice:**
-- Fewer unknowns
-- Grounded conversations
-- Reduced anxiety about hidden issues
+The culmination brings clarity:
 
----
-
-## Phase 3: Direction & Prioritization
-
-**Timeline:** Weeks 9–12  
-**Focus:** Decide what matters most.
-
-Together we:
-- Identify what must be addressed first
-- Separate urgent vs. important
-- Establish sustainable direction
-- Align tech priorities with business goals
-
-Not everything needs fixing at once — this is about **choice**.
-
-**Clients notice:**
-- Easier decisions
-- Fewer competing priorities
-- Confidence replacing urgency
+- Present findings and recommendations
+- Discuss strategic choices and tradeoffs
+- Agree on next phases
+- Begin implementation of highest-priority items
 
 ---
 
-## What We Don't Do In The First 90 Days
+## What You'll Notice During This Period
 
-We do **not**:
+As you move through the first 90 days:
 
-- Rush into large changes
-- Replace systems unnecessarily
-- Overwhelm teams with recommendations
-- Introduce complexity
-- Promise outcomes without context
-
-Stability requires restraint.
+- **Clarity increases.** Questions that felt ambiguous become answerable.
+- **Conversations improve.** Technology discussions shift from vague to specific.
+- **Confidence grows.** Understanding replaces anxiety about the environment.
+- **Risk becomes visible.** You know what matters and where actual danger lives.
+- **Planning becomes possible.** Future decisions can be made with real information.
 
 ---
 
-## What This Sets Up Long-Term
+## The Deliverables
 
-Organizations gain:
+You'll have:
 
-- Clearer understanding of environment
-- Visibility into risks & dependencies
-- Shared language for decisions
-- Sense of direction instead of reaction
-- Foundation for sustainable improvement
-
-Progress becomes steady — and quiet.
+- **A complete assessment** of your current environment in business terms
+- **A clarity document** describing what you have, what works, and what matters
+- **A roadmap** with phases, priorities, and estimated effort
+- **Risk and security assessment** with specific, actionable recommendations
+- **Foundation for ongoing partnership** with shared understanding
 
 ---
 
-## Who This Works Best For
+## Afterward
 
-Works best for organizations that:
+The first 90 days establish the foundation. What comes next depends on your priorities:
 
-- Want clarity before change
-- Prefer thoughtful progress
-- Value leadership-level understanding
-- Seek long-term stability
+- Some organizations move to Phase Two (Build Resilience) immediately, addressing identified risks and gaps
+- Some focus first on specific high-priority initiatives
+- Some take time to absorb, plan, and sequence changes intentionally
 
-Not designed for immediate overhaul.
+There's no prescribed path. The goal is partnering around what matters to you.
 
 ---
 
 ## Next Steps
 
-- Talk through what you want to change
-- Request an initial assessment
-- Explore how this fits into our broader approach
-
-[Talk through your situation](#contact) | [Request an assessment](#contact)
-
----
-
-## Close
-
-The first 90 days shouldn't feel chaotic — they should feel grounding.
-When understanding comes first, everything that follows is easier.
+- [Talk about your current situation](#contact)
+- [Request a conversation about the first 90 days](#contact)
+- [Learn more about how we work](#contact)

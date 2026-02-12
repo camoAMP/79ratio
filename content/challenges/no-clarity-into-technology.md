@@ -3,95 +3,80 @@
 ## Entry
 
 ### Headline
-Lack of clarity is often the first real warning sign.
+Lack of clarity is often the first warning sign.
 
 ### Sub-headline
-Not because technology is failing — but because no system exists to make it understandable at a leadership level.
+Not because technology is failing—but because no framework exists to make it understandable at a leadership level.
 
 ---
 
 ## What This Looks Like
 
-When there's no clear picture of the technology environment, it doesn't feel chaotic — it feels uncertain.
+When there's no clear picture of your environment, it doesn't feel chaotic—it feels uncertain:
 
-- Leaders rely on summaries instead of visibility
-- Technology decisions feel harder than they should
-- It's unclear where risk truly lives
-- Planning depends heavily on a few key people
-- Confidence exists — but based more on trust than understanding
+- Leaders rely on summaries and reports instead of direct visibility.
+- Technology decisions feel harder than they should because context is missing.
+- It's unclear where actual risk lives or what truly matters.
+- Planning depends heavily on a few people who understand the full picture.
+- You have confidence in your team, but less confidence in your environment.
 
 ---
 
 ## The Real Cause
 
 ### Headline
-Most organizations were never given a way to see their technology as a system.
+Most organizations were never given a framework to see technology as a system.
 
-Technology environments often grow faster than the frameworks used to understand them. Tools are added, responsibilities shift, documentation ages — but no unifying model emerges.
-
-Leadership sees fragments:
-- A security report here
-- A ticket summary there
-- An outdated infrastructure diagram
-
-Without lifecycle visibility, clarity fades — even when the environment is maintained.
+Technology environments grow faster than the systems used to understand them. Tools are added, ownership shifts, documentation ages—but no unifying model emerges. Leadership ends up seeing fragments: a security report here, a ticket summary there, an outdated architecture diagram. Without intentional lifecycle visibility, clarity fades even when systems function reliably.
 
 ---
 
 ## Why This Matters
 
-When clarity is missing:
-
-- Strategic planning lacks grounding
-- Technology conversations feel too technical
-- Risk is hard to quantify
-- Leaders hesitate because context is missing
-- Confidence depends on individuals, not systems
+- Strategic planning lacks grounding in actual technical reality.
+- Technology conversations become too technical or too abstract—never just right.
+- Risk is hard to quantify, which makes it hard to manage.
+- Leaders hesitate on decisions because critical context is missing.
+- Confidence depends on individual expertise instead of documented understanding.
 
 ---
 
 ## The 79 Ratio Perspective
 
-Clarity is not a report — it's an outcome of intentional design.
-
-We build environments that are understandable at the leadership level, not just operable at the technical level. Clarity means knowing what matters, understanding the relationships between systems, seeing where risk lives, and being able to make confident decisions.
+Clarity isn't a report—it's an outcome of intentional design. We build environments that are understandable at the leadership level, not just operable at the technical level. Clarity means knowing what matters, understanding system relationships, seeing where risk lives, and making confident decisions with full context.
 
 ---
 
 ## What Changes
 
-When clarity is built into the environment:
+When clarity is built into how the environment is managed:
 
-- Decisions feel grounded in real understanding
-- Risk becomes visible and manageable
-- Planning improves across all functions
-- Fewer surprises emerge
-- Technology stops feeling like a black box
+- Decisions feel grounded in real understanding instead of guesswork.
+- Risk becomes visible and actionable instead of vague.
+- Planning improves across all business functions.
+- Fewer surprises emerge because visibility is continuous.
 
 ---
 
 ## Should You Act?
 
-This deserves attention if:
+Consider this relevant if:
 
-- Leadership lacks a clear current picture
-- Discussions feel overly technical
-- Planning depends on specific individuals
-- Risk is discussed but not visualized
-- You can't easily answer basic questions about your environment
+- Leadership lacks a clear current picture of the environment.
+- Technology discussions feel overly technical or too disconnected from business goals.
+- Planning depends on a few key individuals.
+- Risk is discussed but not visualized or quantified.
 
 ---
 
 ## Next Steps
 
-- Talk through what feels unclear
-- Request a clarity or lifecycle assessment
-- Learn how we design for long-term visibility
-
-[Talk through your situation](#contact) | [Request a clarity assessment](#contact)
+- [Talk through what feels unclear](#contact)
+- [Request a clarity or lifecycle assessment](#contact)
+- [Learn how we design for long-term visibility](#contact)
 
 ---
 
 ## Close
 
-Clarity isn't knowing every detail — it's knowing the right things with confidence.
+Clarity isn't knowing every detail. It's knowing the right things with confidence.

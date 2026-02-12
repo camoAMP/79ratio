@@ -63,103 +63,100 @@ Home
 
 ## HERO
 ### Headline
-Technology shouldn't feel fragile.
+Technology designed to endure.
 
 ### Sub-headline
-Most organizations don't struggle because of bad tools.  
-They struggle because their technology was never designed to hold up over time.
+Most organizations don't fail from bad tools. They fail from technology that was never engineered to support change, growth, or the future.
 
-**Primary CTA:** See how we think about this  
-**Secondary CTA:** Talk through what's going on
+**Primary CTA:** See how we approach this  
+**Secondary CTA:** Talk through your situation
 
 ---
 
-## IF THIS FEELS FAMILIAR (Signals Section)
+## SIGNALS (If This Feels Familiar)
 **Intro:**  
-You may not be dealing with a crisis — but if any of this resonates, your environment is probably under more strain than it should be.
+You may not be in crisis mode. But if any of these resonate, your environment is carrying more strain than it needs to.
 
 **Signals:**
-- Things work… but only because certain people are constantly watching them  
-- Security feels like a checklist, not a system  
-- IT decisions take more time and energy than they should  
-- Growth has exposed gaps no one planned for  
-- Your IT provider is responsive, but nothing ever really improves  
+- Things work only because specific people keep them running  
+- Security remains a compliance activity, not a system  
+- Technology decisions require more time and coordination than they should  
+- Growth revealed gaps that planning didn't anticipate  
+- Your current vendor is responsive but rarely produces real progress  
 
 ---
 
-## THE REFRAME
+## THE PROBLEM
 ### Headline
-The problem usually isn't IT. It's the absence of a long-term system.
+Fragility comes from evolution without intention.
 
 **Body:**  
-Technology environments evolve one decision at a time, the pressure builds as compatibility issues occur with limited context revealing a complex risky system with hidden fragility.  
-We believe technology should be engineered intentionally with structure and a plan for how it will age.
+Technology environments grow decision by decision. Each one makes sense in isolation. Collectively, they create complexity that nobody fully understands, risk that accumulates quietly, and fragility that increases with scale. The fix isn't replacing everything. It's bringing intentional structure to what exists.
 
 ---
 
-## THE 79 RATIO WAY (Principles Section)
+## PRINCIPLES (How We Think)
 ### Headline
-How we think about technology.
+The framework we apply.
 
 **Principles:**
-- **Technology Is a Living System**  
-  Every environment changes over time. If it isn't actively managed and guided, entropy takes over.
+- **Systems Thinking First**  
+  Technology doesn't improve by fixing individual pieces. It improves when you understand how pieces fit together and behave under pressure.
 
-- **Security Is About Resilience, Not Fear**  
-  Real security reduces risk quietly and continuously — without relying on constant alerts or panic.
+- **Stability Over Velocity**  
+  Fast change creates fragile environments. Intentional change creates durable ones. We optimize for the long term.
 
-- **Stability Is the Goal**  
-  The best technology environments aren't exciting. They're dependable, predictable, and boring in the best way.
+- **Risk Made Visible**  
+  Risk you can't see controls you. We bring clarity to where actual danger lives so you can manage it.
 
-- **Clarity Changes Behavior**  
-  When systems are well designed, decisions become simpler — and people stop working around their tools.
+- **Clarity Enables Action**  
+  When systems are well designed, decisions become straightforward. Teams stop working around tools and start working toward strategy.
 
 ---
 
-## WHAT WORKING WITH US FEELS LIKE
+## ENGAGEMENT MODEL
 ### Headline
-What to expect when you work with us.
+What our approach actually looks like.
 
 **Flow:**
-1. We slow down before we speed up  
-2. We bring structure to complexity  
-3. We design for durability  
-4. We stay involved  
+1. Establish Understanding — diagnose before changing  
+2. Build Resilience — improve with intention  
+3. Enable Evolution — support confident growth  
 
 ---
 
 ## OUTCOMES
 ### Headline
-What changes when technology is managed this way.
+What changes when technology is engineered intentionally.
 
 **Outcomes:**
-- Fewer recurring issues and less emergency work  
-- Reduced operational and security risk  
-- Clearer, calmer technology decision-making  
-- Systems that support growth instead of resisting it  
+- Risk becomes visible and manageable, not hidden and accumulating  
+- Changes happen with confidence because dependencies are clear  
+- Growth doesn't expose new fragility because systems were designed to scale  
+- Leadership focuses on strategy because technology stops demanding attention  
 
 ---
 
-## WHO THIS IS AND ISN'T FOR
+## WHO WE WORK WITH
 ### Headline
-We're selective by design.
+We're selective about partnerships.
 
 **Good fit if:**
-- Value long-term stability  
-- Want clarity  
-- See tech as critical  
+- Technology matters to your strategy  
+- Stability is more important than speed  
+- You want clarity and long-term thinking  
 
 **Not a fit if:**
-- Price-driven  
-- Want reactive IT  
-- Prefer minimal oversight  
+- Cost is the primary driver  
+- You need only reactive support  
+- You prefer to avoid planning  
 
 ---
 
 ## NEXT STEPS
 ### Headline  
-If you're thinking about your technology differently, here are a few ways to continue.
+If this resonates, here's how to continue.
 
 - Talk through your situation  
 - Request an assessment  
-- Learn more about our approach
+- Explore how we help

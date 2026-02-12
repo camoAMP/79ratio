@@ -6,87 +6,77 @@
 Outgrowing your IT provider doesn't mean they failed.
 
 ### Sub-headline
-It usually means the business has changed — and the support model hasn't.
+It usually means your business has evolved—and the support model hasn't kept pace.
 
 ---
 
 ## What This Looks Like
 
-Outgrowing a provider appears as misalignment:
+Outgrowing a provider appears as quiet misalignment:
 
-- Support is responsive but reactive
-- Conversations focus on tickets, not direction
-- Provider fixes issues but doesn't guide decisions
-- Advice feels tactical, not strategic
-- Relationship feels stuck at an earlier stage
-
-Nothing is "wrong" — but the partnership no longer fits.
+- Support is responsive to crises but reactive overall.
+- Conversations focus on tickets and incidents, not direction.
+- The provider fixes problems but doesn't guide strategic decisions.
+- Advice feels tactical rather than informed by your business context.
+- The relationship feels stuck at an earlier stage of your growth.
 
 ---
 
 ## The Real Cause
 
 ### Headline
-Most IT providers are built for stability — not evolution.
+Most IT providers are built for stability, not evolution.
 
-Many IT relationships begin when reliability is the need. As risk, complexity, or operational expectations grow, gaps appear — not because of failure, but because the model wasn't designed to scale.
+Many IT relationships begin when reliability is the primary need. As your risk increases, complexity grows, or operational expectations shift, gaps emerge—not because of failure, but because the model wasn't designed to scale with you. The provider becomes a vendor instead of a steward.
 
 ---
 
 ## Why This Matters
 
-When alignment breaks:
-
-- Leaders make decisions without context
-- Risk accumulates quietly
-- Planning becomes fragmented
-- Technology guidance lags behind business maturity
-- Confidence erodes even when support is "good"
+- Leaders make decisions without the context IT could provide.
+- Risk accumulates quietly because no one is thinking holistically about it.
+- Planning becomes fragmented—technology decisions happen separately from business strategy.
+- Technology guidance lags behind your organization's maturity.
+- Confidence erodes even though the provider is technically competent.
 
 ---
 
 ## The 79 Ratio Perspective
 
-IT support should grow when the business does.
-
-We act as technology stewards — understanding where the business is and where it's headed. We think about your environment as a system, anticipate problems rather than just react to them, and help you make intentional decisions that align with your strategy.
+IT support should grow when your business does. We act as technology stewards—understanding where you are and where you're heading. We think about your environment as a system, anticipate problems instead of just reacting to them, and help you make intentional decisions that align with your strategy.
 
 ---
 
 ## What Changes
 
-When the partnership aligns:
+When the partnership actually aligns with your growth:
 
-- Conversations shift to strategy
-- Risk and lifecycle become intentional
-- Planning becomes proactive
-- Clarity increases across systems
-- Leadership confidence grows
+- Conversations shift from reactive to strategic.
+- Risk and lifecycle management become intentional instead of accidental.
+- Planning is proactive because visibility is continuous.
+- Clarity increases across systems and decisions.
 
 ---
 
 ## Should You Act?
 
-Consider action if:
+Consider this relevant if:
 
-- Complexity or risk increased
-- IT feels operational, not strategic
-- Planning happens outside IT
-- Uncertainty exists about scalability
-- You want a partner who understands your business
+- Your business complexity or risk has increased significantly.
+- IT conversations remain operational instead of strategic.
+- Technology planning happens outside of IT involvement.
+- You're uncertain about your infrastructure's ability to scale.
 
 ---
 
 ## Next Steps
 
-- Talk through whether the model fits
-- Request a lifecycle review
-- Learn how we partner with growing organizations
-
-[Talk through your situation](#contact) | [Request a lifecycle review](#contact)
+- [Talk through whether the model still fits](#contact)
+- [Request a lifecycle review](#contact)
+- [Learn how we partner with growing organizations](#contact)
 
 ---
 
 ## Close
 
-Outgrowing an IT provider is a sign of progress — not a problem.
+Outgrowing an IT provider is a sign of progress—not a failure to find the right vendor.
