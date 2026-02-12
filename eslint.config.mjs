@@ -4,7 +4,7 @@ const baseConfig = Array.isArray(next) ? next : [next];
 
 const config = [
   {
-    ignores: ['**/.open-next/**'],
+    ignores: ['**/.vercel/**', '**/out/**'],
   },
   ...baseConfig,
   {
