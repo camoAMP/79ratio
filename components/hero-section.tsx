@@ -117,10 +117,10 @@ export function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
-                <Link href={homeContent.hero.primaryCta.href}>{homeContent.hero.primaryCta.label}</Link>
+                <Link prefetch={false} href={homeContent.hero.primaryCta.href}>{homeContent.hero.primaryCta.label}</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <Link href={homeContent.hero.secondaryCta.href}>{homeContent.hero.secondaryCta.label}</Link>
+                <Link prefetch={false} href={homeContent.hero.secondaryCta.href}>{homeContent.hero.secondaryCta.label}</Link>
               </Button>
             </div>
 

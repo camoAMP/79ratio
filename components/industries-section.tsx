@@ -101,14 +101,14 @@ function IndustryCard({
                 We understand your unique challenges and deliver tailored IT infrastructure that ensures compliance and supports growth.
               </p>
               <div className="flex justify-center gap-4">
-                <Link
+                <Link prefetch={false}
                   href={`/industries/${slug}`}
                   className="text-primary hover:text-primary/80 text-sm font-medium"
                   style={{ textShadow }}
                 >
                   Explore solutions →
                 </Link>
-                <Link href="/contact" className="text-primary hover:text-primary/80 text-sm font-medium" style={{ textShadow }}>
+                <Link prefetch={false} href="/contact" className="text-primary hover:text-primary/80 text-sm font-medium" style={{ textShadow }}>
                   Book a consult →
                 </Link>
               </div>
@@ -154,7 +154,7 @@ export function IndustriesSection() {
 
         <div className="text-center">
           <Button asChild size="lg" variant="outline" className="text-lg px-8">
-            <Link href="/industries">Explore All Industries</Link>
+            <Link prefetch={false} href="/industries">Explore All Industries</Link>
           </Button>
         </div>
       </div>

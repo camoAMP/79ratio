@@ -92,7 +92,7 @@ export function ServicesOverview() {
               .replace(/(^-|-$)/g, "")
 
             return (
-              <Link key={index} href={`/services/${serviceSlug}`} className="group block">
+              <Link prefetch={false} key={index} href={`/services/${serviceSlug}`} className="group block">
                 <div className="relative h-48 bg-gradient-to-br from-black/80 to-black/60 rounded-xl border border-primary/40 hover:border-primary transition-all duration-300 hover:shadow-[0_20px_50px_rgba(212,175,55,0.35)] overflow-hidden backdrop-blur-sm">
                   {/* Background Pattern */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
@@ -124,7 +124,7 @@ export function ServicesOverview() {
         {/* CTA Section */}
         <div className="text-center">
           <Button asChild size="lg" className="text-lg px-8">
-            <Link href="/services" className="inline-flex items-center gap-2">
+            <Link prefetch={false} href="/services" className="inline-flex items-center gap-2">
               View All Services
               <ArrowRight className="w-4 h-4" />
             </Link>
