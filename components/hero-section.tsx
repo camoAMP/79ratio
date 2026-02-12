@@ -1,24 +1,63 @@
 import { Button } from "@/components/ui/button"
-import { Shield, Clock, Users, Zap } from "lucide-react"
+import { Clock, Shield, Sparkles, Workflow } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+
+import { homeContent } from "@/lib/brief-content"
+
+const highlights = [
+  {
+    icon: Shield,
+    title: "Resilient",
+    subtitle: "Security by design",
+  },
+  {
+    icon: Workflow,
+    title: "Structured",
+    subtitle: "Lifecycle managed",
+  },
+  {
+    icon: Clock,
+    title: "Steady",
+    subtitle: "Reduced disruption",
+  },
+  {
+    icon: Sparkles,
+    title: "Quiet",
+    subtitle: "Dependable operations",
+  },
+]
 
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden py-20 lg:py-32 bg-black">
-      {/* Animated Background */}
       <div className="absolute inset-0 z-0">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url(/home-bg.png)",
-            filter: "brightness(1.35)",
+            backgroundImage: "url(/home.png)",
+            filter: "brightness(1.2)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/18 via-black/12 to-black/18" />
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-rotate"
+          style={{
+            backgroundImage: "url(/home.png)",
+            backgroundSize: "130%",
+            backgroundPosition: "center",
+            opacity: 0.9,
+            filter: "brightness(1.35)",
+            WebkitMaskImage:
+              "radial-gradient(58% 58% at 50% 44%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.95) 48%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.25) 72%, rgba(0,0,0,0) 82%)",
+            maskImage:
+              "radial-gradient(58% 58% at 50% 44%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.95) 48%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.25) 72%, rgba(0,0,0,0) 82%)",
+            WebkitMaskRepeat: "no-repeat",
+            maskRepeat: "no-repeat",
+          }}
+        />
+        <div className="absolute inset-0 hero-edge-fade pointer-events-none" />
 
         <div className="absolute inset-0">
-          {/* Fibonacci spiral elements */}
           <div
             className="absolute top-1/4 left-1/4 w-3 h-3 bg-primary rounded-full animate-float opacity-80"
             style={{ animationDelay: "0s" }}
@@ -45,91 +84,60 @@ export function HeroSection() {
           />
         </div>
       </div>
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-28 bg-gradient-to-b from-transparent via-black/80 to-black" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center space-y-12">
-          {/* Logo */}
-            <div className="flex justify-center">
-              <Image
-                src="/79ratio-logo.webp"
-                alt="79 Ratio Logo"
-                width={300}
-                height={100}
-              className="h-16 w-auto"
-              priority
-            />
+          <div className="flex justify-center">
+            <Image src="/79ratio-logo.webp" alt="79 Ratio Logo" width={300} height={100} className="h-16 w-auto" priority />
           </div>
 
-          {/* Hero Content */}
           <div className="space-y-8 max-w-4xl mx-auto hero-text-panel">
-            <div className="space-y-4">
+            <div className="space-y-5">
               <h1 className="lg:text-6xl font-bold text-primary leading-tight text-balance text-3xl drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]">
-                Where Technology Evolves with{" "}
-                <span className="text-[var(--primary-soft)] drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]">Precision</span>
+                {homeContent.hero.headline}
               </h1>
-              <p className="text-white leading-relaxed text-pretty text-lg drop-shadow-[0_8px_24px_rgba(0,0,0,0.55)]">
-                Sustainable Excellence • Strategic Innovation • Tailored Management
+              <p className="text-white leading-relaxed text-pretty text-xl drop-shadow-[0_8px_24px_rgba(0,0,0,0.55)]">
+                {homeContent.hero.subheadline}
               </p>
               <p className="text-white/95 leading-relaxed text-pretty text-base mt-4 drop-shadow-[0_10px_28px_rgba(0,0,0,0.6)]">
-                79 Ratio delivers comprehensive IT solutions tailored for law firms, healthcare providers, nonprofits,
-                and manufacturing companies. Experience proactive support, 24/7 monitoring, and strategic technology
-                guidance.
+                {homeContent.hero.body}
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
-                <Link href="/contact">Schedule a Call</Link>
+                <Link href={homeContent.hero.primaryCta.href}>{homeContent.hero.primaryCta.label}</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <Link href="/services">View Services</Link>
+                <Link href={homeContent.hero.secondaryCta.href}>{homeContent.hero.secondaryCta.label}</Link>
               </Button>
             </div>
 
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-8 justify-items-center">
-              <div className="flex items-center space-x-3 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-                <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center border border-primary/30">
-                  <Shield className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <div className="font-semibold text-[var(--foreground)]">Secure</div>
-                  <div className="text-sm text-[var(--muted-foreground)]">Enterprise-grade</div>
-                </div>
-              </div>
+              {highlights.map((item, index) => {
+                const Icon = item.icon
 
-              <div className="flex items-center space-x-3 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-                <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center border border-primary/30">
-                  <Clock className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <div className="font-semibold text-[var(--foreground)]">24/7/365</div>
-                  <div className="text-sm text-[var(--muted-foreground)]">Monitoring</div>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-3 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-                <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center border border-primary/30">
-                  <Users className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <div className="font-semibold text-[var(--foreground)]">Expert</div>
-                  <div className="text-sm text-[var(--muted-foreground)]">Support Team</div>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-3 animate-fade-in" style={{ animationDelay: "0.8s" }}>
-                <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center border border-primary/30">
-                  <Zap className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <div className="font-semibold text-[var(--foreground)]">Proactive</div>
-                  <div className="text-sm text-[var(--muted-foreground)]">Approach</div>
-                </div>
-              </div>
+                return (
+                  <div
+                    key={item.title}
+                    className="flex items-center space-x-3 animate-fade-in"
+                    style={{ animationDelay: `${(index + 1) * 0.2}s` }}
+                  >
+                    <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center border border-primary/30">
+                      <Icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-[var(--foreground)]">{item.title}</div>
+                      <div className="text-sm text-[var(--muted-foreground)]">{item.subtitle}</div>
+                    </div>
+                  </div>
+                )
+              })}
             </div>
 
-            <div className="pt-6 border-t border-primary/30">
-              <p className="text-lg text-primary font-medium">79 RATIO. Precision. Sustainability. Excellence.</p>
+            <div className="pt-6">
+              <p className="text-lg text-primary font-medium">79 RATIO. Structure. Clarity. Stewardship.</p>
             </div>
           </div>
         </div>
