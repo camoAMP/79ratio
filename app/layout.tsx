@@ -1,7 +1,5 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
@@ -23,11 +21,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const shouldLoadVercelAnalytics = process.env.VERCEL === "1"
+
   return (
     <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className="font-sans">
         <Suspense fallback={null}>{children}</Suspense>
-        <Analytics />
+        {shouldLoadVercelAnalytics ? <Analytics /> : null}
       </body>
     </html>
   )
