@@ -30,21 +30,22 @@ const highlights = [
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden py-20 lg:py-32 bg-black">
+    <section className="relative overflow-hidden py-16 lg:py-32 bg-black">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0">
-          <Image
-            src="/home.webp"
-            alt=""
-            fill
-            priority
-            fetchPriority="high"
-            sizes="100vw"
-            className="object-cover"
-            style={{ filter: "brightness(1.2)" }}
-          />
+          <picture>
+            <source media="(max-width: 768px)" srcSet="/home-mobile.webp" />
+            <img
+              src="/home.webp"
+              alt=""
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          </picture>
         </div>
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 hidden md:block">
           <Image
             src="/home.webp"
             alt=""
@@ -63,9 +64,10 @@ export function HeroSection() {
             }}
           />
         </div>
-        <div className="absolute inset-0 hero-edge-fade pointer-events-none" />
+        <div className="absolute inset-0 hero-edge-fade pointer-events-none hidden md:block" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/38 via-black/55 to-black/80 md:hidden" />
 
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 hidden md:block">
           <div
             className="absolute top-1/4 left-1/4 w-3 h-3 bg-primary rounded-full animate-float opacity-80"
             style={{ animationDelay: "0s" }}

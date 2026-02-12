@@ -28,7 +28,7 @@ export default function HomePage() {
     <main className="min-h-screen bg-black text-white">
       <Navigation />
       <HeroSection />
-      <section className="mx-auto my-16 w-full max-w-6xl px-4">
+      <section className="home-deferred mx-auto my-16 w-full max-w-6xl px-4">
         <div className="relative isolate overflow-hidden rounded-[28px] border border-primary/30 bg-gradient-to-br from-primary/10 via-black to-primary/5 shadow-[0_20px_70px_rgba(0,0,0,0.55)]">
           <div className="pointer-events-none absolute -inset-8 opacity-70 mix-blend-screen">
             <svg
@@ -91,8 +91,12 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <ServicesOverview />
-      <IndustriesSection />
+      <div className="home-deferred">
+        <ServicesOverview />
+      </div>
+      <div className="home-deferred">
+        <IndustriesSection />
+      </div>
       <Footer />
     </main>
   )

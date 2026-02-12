@@ -1,7 +1,4 @@
-"use client"
-
 import Link from "next/link"
-import { useState } from "react"
 
 import { Button } from "@/components/ui/button"
 import { Scale, Heart, HandHeart, Factory } from "lucide-react"
@@ -48,8 +45,6 @@ function IndustryCard({
   benefits: string[]
   index: number
 }) {
-  const [isExpanded, setIsExpanded] = useState(false)
-
   const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, "-")
   const textShadow = "0 4px 18px rgba(0,0,0,0.75)"
 
@@ -95,15 +90,12 @@ function IndustryCard({
             ))}
           </div>
 
-          <Button
-            onClick={() => setIsExpanded(!isExpanded)}
-            className="w-full py-2 bg-gradient-to-r from-primary to-primary/80 text-black font-semibold rounded-lg hover:from-primary/90 hover:to-primary transform hover:scale-105 shadow-lg shadow-primary/30"
-          >
-            {isExpanded ? "Show Less" : "Learn More"}
-          </Button>
-
-          {isExpanded && (
-            <div className="mt-4 pt-4 border-t border-primary/30 animate-in fade-in duration-300 text-center space-y-3">
+          <details className="group/expand mt-2">
+            <summary className="cursor-pointer list-none w-full py-2 text-center bg-gradient-to-r from-primary to-primary/80 text-black font-semibold rounded-lg hover:from-primary/90 hover:to-primary shadow-lg shadow-primary/30">
+              <span className="group-open/expand:hidden">Learn More</span>
+              <span className="hidden group-open/expand:inline">Show Less</span>
+            </summary>
+            <div className="mt-4 border-t border-primary/30 pt-4 text-center space-y-3">
               <p className="text-[var(--foreground)] text-sm leading-relaxed" style={{ textShadow }}>
                 Our specialized solutions for {title.toLowerCase()} combine cutting-edge technology with industry-specific expertise.
                 We understand your unique challenges and deliver tailored IT infrastructure that ensures compliance and supports growth.
@@ -121,7 +113,7 @@ function IndustryCard({
                 </Link>
               </div>
             </div>
-          )}
+          </details>
         </div>
       </div>
     </div>

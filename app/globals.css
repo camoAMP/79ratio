@@ -214,6 +214,14 @@
     backdrop-filter: blur(8px);
   }
 
+  @media (max-width: 767px) {
+    .hero-text-panel {
+      backdrop-filter: none;
+      background: rgba(0, 0, 0, 0.62);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+
   .hero-bg-image {
     filter: brightness(1.9);
   }
@@ -256,6 +264,11 @@
     border-color: transparent !important;
     box-shadow: none !important;
     color: var(--primary) !important;
+  }
+
+  .home-deferred {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 1200px;
   }
 }
 
