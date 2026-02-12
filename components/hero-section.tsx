@@ -32,29 +32,37 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden py-20 lg:py-32 bg-black">
       <div className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url(/home.png)",
-            filter: "brightness(1.2)",
-          }}
-        />
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-rotate"
-          style={{
-            backgroundImage: "url(/home.png)",
-            backgroundSize: "130%",
-            backgroundPosition: "center",
-            opacity: 0.9,
-            filter: "brightness(1.35)",
-            WebkitMaskImage:
-              "radial-gradient(58% 58% at 50% 44%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.95) 48%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.25) 72%, rgba(0,0,0,0) 82%)",
-            maskImage:
-              "radial-gradient(58% 58% at 50% 44%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.95) 48%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.25) 72%, rgba(0,0,0,0) 82%)",
-            WebkitMaskRepeat: "no-repeat",
-            maskRepeat: "no-repeat",
-          }}
-        />
+        <div className="absolute inset-0">
+          <Image
+            src="/home.webp"
+            alt=""
+            fill
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+            className="object-cover"
+            style={{ filter: "brightness(1.2)" }}
+          />
+        </div>
+        <div className="absolute inset-0">
+          <Image
+            src="/home.webp"
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover animate-slow-rotate"
+            style={{
+              opacity: 0.9,
+              filter: "brightness(1.35)",
+              WebkitMaskImage:
+                "radial-gradient(58% 58% at 50% 44%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.95) 48%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.25) 72%, rgba(0,0,0,0) 82%)",
+              maskImage:
+                "radial-gradient(58% 58% at 50% 44%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.95) 48%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.25) 72%, rgba(0,0,0,0) 82%)",
+              WebkitMaskRepeat: "no-repeat",
+              maskRepeat: "no-repeat",
+            }}
+          />
+        </div>
         <div className="absolute inset-0 hero-edge-fade pointer-events-none" />
 
         <div className="absolute inset-0">

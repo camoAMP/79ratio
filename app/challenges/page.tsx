@@ -1,5 +1,8 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+import { useSearchParams } from "next/navigation"
 import { ChevronDown, CheckCircle2 } from "lucide-react"
 
 import { Footer } from "@/components/footer"
@@ -15,28 +18,14 @@ import {
   challengesOrder,
 } from "@/lib/brief-content"
 
-type SearchParamsValue = string | string[] | undefined
-
-type ChallengesPageProps = {
-  searchParams?: Promise<Record<string, SearchParamsValue>> | Record<string, SearchParamsValue>
-}
-
-function getSearchParam(value: SearchParamsValue): string | undefined {
-  if (Array.isArray(value)) {
-    return value[0]
-  }
-
-  return value
-}
-
 function isChallengeSlug(value: string | undefined): value is ChallengeSlug {
   return value !== undefined && challengesOrder.includes(value as ChallengeSlug)
 }
 
-export default async function ChallengesPage({ searchParams }: ChallengesPageProps) {
-  const resolvedSearchParams = await Promise.resolve(searchParams ?? {})
+export default function ChallengesPage() {
+  const searchParams = useSearchParams()
   const cardTextShadow = "0 6px 24px rgba(0,0,0,0.88)"
-  const challengeFromQuery = getSearchParam(resolvedSearchParams.challenge)
+  const challengeFromQuery = searchParams.get("challenge") ?? undefined
   const queryChallengeSlug = isChallengeSlug(challengeFromQuery) ? challengeFromQuery : null
   const expandedSlug = queryChallengeSlug
   const heroImage = queryChallengeSlug ? challengeBackgroundImages[queryChallengeSlug] : "/challanges.jpg"

@@ -1,10 +1,9 @@
-import Script from "next/script"
+import Image from "next/image"
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
 import { ServicesOverview } from "@/components/services-overview"
 import { IndustriesSection } from "@/components/industries-section"
 import { Footer } from "@/components/footer"
-import { VimeoHeroPlayer } from "@/components/vimeo-hero-player"
 
 function buildFibonacciSpiralPath(points = 220, turns = 2, radiusScale = 2, viewBox = 120): string {
   const phi = (1 + Math.sqrt(5)) / 2
@@ -73,7 +72,21 @@ export default function HomePage() {
           </div>
           <div className="relative p-4 sm:p-6">
             <div className="relative aspect-video overflow-hidden rounded-2xl bg-black/70 ring-1 ring-primary/30 shadow-[0_18px_55px_rgba(0,0,0,0.55)]">
-              <VimeoHeroPlayer videoUrl="https://player.vimeo.com/video/1146799101" freezeTimeSeconds={122} />
+              <Image src="/cards.jpg" alt="" fill sizes="(min-width: 768px) 1100px, 100vw" className="object-cover opacity-50" />
+              <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/65 to-black/78" />
+              <div className="relative z-10 flex h-full flex-col items-center justify-center gap-4 px-6 text-center">
+                <p className="text-sm uppercase tracking-[0.14em] text-primary">Overview Video</p>
+                <h2 className="max-w-3xl text-2xl font-bold text-primary md:text-3xl">Watch the 79 Ratio approach in 90 seconds</h2>
+                <p className="max-w-2xl text-base text-white/90">Open the full video in Vimeo without loading third-party embeds on page load.</p>
+                <a
+                  href="https://vimeo.com/1146799101"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center rounded-md border border-primary/60 bg-black/65 px-5 py-2.5 font-medium text-primary hover:border-primary hover:text-[var(--primary-soft)]"
+                >
+                  Watch on Vimeo
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -81,10 +94,6 @@ export default function HomePage() {
       <ServicesOverview />
       <IndustriesSection />
       <Footer />
-      <Script
-        src="https://player.vimeo.com/api/player.js"
-        strategy="afterInteractive"
-      />
     </main>
   )
 }
