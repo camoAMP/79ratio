@@ -8,26 +8,26 @@ const industries = [
     icon: Scale,
     title: "Law Firms",
     description:
-      "Specialized IT solutions for legal practices with focus on security, compliance, and client confidentiality.",
+      "Protect client data, support case workflows, and keep attorneys moving without avoidable downtime.",
     benefits: ["Document security", "Case management systems", "Compliance support"],
   },
   {
     icon: Heart,
     title: "Healthcare",
-    description: "HIPAA-compliant technology solutions designed for medical practices and healthcare organizations.",
+    description: "Secure, reliable systems that support patient care and help your team stay HIPAA-ready.",
     benefits: ["HIPAA compliance", "EHR integration", "Patient data security"],
   },
   {
     icon: HandHeart,
     title: "Nonprofits",
-    description: "Cost-effective IT solutions that maximize your technology budget while supporting your mission.",
+    description: "Stretch limited resources with dependable tools and support that stay aligned with your mission.",
     benefits: ["Budget optimization", "Donor management", "Volunteer coordination"],
   },
   {
     icon: Factory,
     title: "Manufacturing",
     description:
-      "Robust IT infrastructure supporting production systems, inventory management, and operational efficiency.",
+      "Keep production, inventory, and operations running on stable systems where downtime is expensive.",
     benefits: ["Production systems", "Inventory tracking", "Quality control"],
   },
 ]
@@ -50,10 +50,10 @@ function IndustryCard({
 
   return (
     <div
-      className="relative transition-all duration-300 hover:shadow-[0_20px_60px_rgba(212,175,55,0.45)] hover:scale-105"
+      className="relative h-full transition-all duration-300 hover:shadow-[0_20px_60px_rgba(212,175,55,0.45)] hover:scale-105"
       style={{ animationDelay: `${index * 100}ms` }}
     >
-      <div className="relative z-10 m-3 rounded-3xl overflow-hidden border-2 border-primary">
+      <div className="relative z-10 h-full rounded-3xl overflow-hidden border-2 border-primary">
         <div className="absolute inset-0">
           <div
             className="hidden md:block absolute inset-0 bg-contain bg-center bg-no-repeat"
@@ -97,19 +97,19 @@ function IndustryCard({
             </summary>
             <div className="mt-4 border-t border-primary/30 pt-4 text-center space-y-3">
               <p className="text-[var(--foreground)] text-sm leading-relaxed" style={{ textShadow }}>
-                Our specialized solutions for {title.toLowerCase()} combine cutting-edge technology with industry-specific expertise.
-                We understand your unique challenges and deliver tailored IT infrastructure that ensures compliance and supports growth.
+                For {title.toLowerCase()}, we tailor your environment to match daily workflows, compliance needs, and
+                growth goals so technology helps instead of slowing the team down.
               </p>
-              <div className="flex justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-4">
                 <Link prefetch={false}
                   href={`/industries/${slug}`}
                   className="text-primary hover:text-primary/80 text-sm font-medium"
                   style={{ textShadow }}
                 >
-                  Explore solutions →
+                  See industry plan →
                 </Link>
                 <Link prefetch={false} href="/contact" className="text-primary hover:text-primary/80 text-sm font-medium" style={{ textShadow }}>
-                  Book a consult →
+                  Start a conversation →
                 </Link>
               </div>
             </div>
@@ -127,13 +127,14 @@ export function IndustriesSection() {
   return (
     <section className="relative py-20 bg-black">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-3xl p-10 text-center text-[var(--foreground)] mb-16 border border-primary/40">
+        <div className="relative mb-16 overflow-hidden rounded-3xl border border-primary/40 p-6 text-center text-[var(--foreground)] sm:p-8 lg:p-10">
           <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url(/cards.jpg)" }} />
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative space-y-4">
-            <h2 className="text-3xl lg:text-5xl font-bold text-primary text-balance">Industry Solutions</h2>
+            <h2 className="text-3xl lg:text-5xl font-bold text-primary text-balance">Industry expertise without cookie-cutter advice</h2>
             <p className="text-xl text-[var(--foreground)] max-w-3xl mx-auto text-pretty" style={{ textShadow: "0 6px 20px rgba(0,0,0,0.65)" }}>
-              Tailored IT expertise for your industry&apos;s unique challenges—security, compliance, and transformation delivered with precision.
+              Every industry has different pressure points. We shape the systems, security, and support around how
+              your team actually works.
             </p>
           </div>
         </div>

@@ -12,8 +12,7 @@ export function Footer() {
               <Image src="/79ratio-logo.webp" alt="79 Ratio Logo" width={160} height={50} className="h-10 w-auto" priority />
             </Link>
             <p className="text-muted-foreground text-pretty">
-              Your trusted IT partner delivering comprehensive technology solutions for law firms, healthcare,
-              nonprofits, and manufacturing.
+              Practical IT leadership and support for teams that need stability, stronger security, and room to grow.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">

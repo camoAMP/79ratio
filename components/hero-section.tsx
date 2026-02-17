@@ -8,23 +8,23 @@ import { homeContent } from "@/lib/brief-content"
 const highlights = [
   {
     icon: Shield,
-    title: "Resilient",
-    subtitle: "Security by design",
+    title: "Secure",
+    subtitle: "Protection built in",
   },
   {
     icon: Workflow,
-    title: "Structured",
-    subtitle: "Lifecycle managed",
+    title: "Organized",
+    subtitle: "Clear systems and ownership",
   },
   {
     icon: Clock,
-    title: "Steady",
-    subtitle: "Reduced disruption",
+    title: "Responsive",
+    subtitle: "Problems handled quickly",
   },
   {
     icon: Sparkles,
-    title: "Quiet",
-    subtitle: "Dependable operations",
+    title: "Dependable",
+    subtitle: "Technology you can trust",
   },
 ]
 
@@ -32,35 +32,45 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden py-16 lg:py-32 bg-black">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0">
-          <picture>
-            <source media="(max-width: 768px)" srcSet="/home-mobile.webp" />
-            <img
-              src="/home.webp"
-              alt=""
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </picture>
+        <div className="absolute inset-0 md:hidden">
+          <Image
+            src="/home-mobile.webp"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
         </div>
         <div className="absolute inset-0 hidden md:block">
           <Image
             src="/home.webp"
             alt=""
             fill
+            priority
+            loading="eager"
+            fetchPriority="high"
             sizes="100vw"
-            className="object-cover animate-slow-rotate"
+            className="object-cover"
             style={{
-              opacity: 0.9,
-              filter: "brightness(1.35)",
-              WebkitMaskImage:
-                "radial-gradient(58% 58% at 50% 44%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.95) 48%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.25) 72%, rgba(0,0,0,0) 82%)",
-              maskImage:
-                "radial-gradient(58% 58% at 50% 44%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.95) 48%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.25) 72%, rgba(0,0,0,0) 82%)",
-              WebkitMaskRepeat: "no-repeat",
-              maskRepeat: "no-repeat",
+              opacity: 0.8,
+              filter: "brightness(1.02)",
+            }}
+          />
+        </div>
+        <div className="pointer-events-none absolute inset-0 hidden md:block home-hero-spiral-core animate-spiral-center-rotate">
+          <Image
+            src="/home.webp"
+            alt=""
+            fill
+            priority
+            loading="eager"
+            fetchPriority="high"
+            sizes="100vw"
+            className="object-cover"
+            style={{
+              opacity: 0.78,
+              filter: "brightness(1.14)",
             }}
           />
         </div>
@@ -102,15 +112,15 @@ export function HeroSection() {
             <Image src="/79ratio-logo.webp" alt="79 Ratio Logo" width={300} height={100} className="h-16 w-auto" priority />
           </div>
 
-          <div className="space-y-8 max-w-4xl mx-auto hero-text-panel">
+          <div className="space-y-8 max-w-4xl mx-auto hero-text-panel home-hero-panel">
             <div className="space-y-5">
-              <h1 className="lg:text-6xl font-bold text-primary leading-tight text-balance text-3xl drop-shadow-[0_8px_24px_rgba(0,0,0,0.6)]">
+              <h1 className="home-hero-headline lg:text-6xl font-bold text-primary leading-tight text-balance text-3xl">
                 {homeContent.hero.headline}
               </h1>
-              <p className="text-white leading-relaxed text-pretty text-xl drop-shadow-[0_8px_24px_rgba(0,0,0,0.55)]">
+              <p className="home-hero-copy text-xl leading-relaxed text-pretty">
                 {homeContent.hero.subheadline}
               </p>
-              <p className="text-white/95 leading-relaxed text-pretty text-base mt-4 drop-shadow-[0_10px_28px_rgba(0,0,0,0.6)]">
+              <p className="home-hero-copy home-hero-copy-muted text-base mt-4 leading-relaxed text-pretty">
                 {homeContent.hero.body}
               </p>
             </div>
@@ -124,14 +134,14 @@ export function HeroSection() {
               </Button>
             </div>
 
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-8 justify-items-center">
+            <div className="grid w-full grid-cols-1 gap-4 pt-8 justify-items-center sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
               {highlights.map((item, index) => {
                 const Icon = item.icon
 
                 return (
                   <div
                     key={item.title}
-                    className="flex items-center space-x-3 animate-fade-in"
+                    className="flex w-full max-w-[220px] items-center justify-center gap-3 animate-fade-in sm:justify-start"
                     style={{ animationDelay: `${(index + 1) * 0.2}s` }}
                   >
                     <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center border border-primary/30">
@@ -147,7 +157,7 @@ export function HeroSection() {
             </div>
 
             <div className="pt-6">
-              <p className="text-lg text-primary font-medium">79 RATIO. Structure. Clarity. Stewardship.</p>
+              <p className="home-hero-tagline text-lg text-primary font-medium">79 Ratio. Calm systems. Clear decisions.</p>
             </div>
           </div>
         </div>

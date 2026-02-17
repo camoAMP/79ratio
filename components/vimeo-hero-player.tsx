@@ -1,146 +1,183 @@
 "use client"
 
 import Image from "next/image"
-import { useEffect, useRef, useState, useCallback } from "react"
+import { useEffect, useMemo, useRef, useState, useCallback } from "react"
 import { cn } from "@/lib/utils"
-
-type VimeoPlayerInstance = {
-  on: (event: string, callback: () => void) => void
-  off: (event: string, callback: () => void) => void
-  setCurrentTime: (seconds: number) => Promise<void>
-  play: () => Promise<void>
-  pause: () => Promise<void>
-}
-
-declare global {
-  interface Window {
-    Vimeo?: {
-      Player: new (element: HTMLIFrameElement) => VimeoPlayerInstance
-    }
-  }
-}
 
 type VimeoHeroPlayerProps = {
   videoUrl: string
-  freezeTimeSeconds?: number
+  eyebrow?: string
+  title: string
+  description: string
+  ctaLabel?: string
+  posterSrc?: string
 }
 
-export function VimeoHeroPlayer({ videoUrl, freezeTimeSeconds = 122 }: VimeoHeroPlayerProps) {
-  const iframeRef = useRef<HTMLIFrameElement>(null)
-  const playerRef = useRef<VimeoPlayerInstance | null>(null)
-  const [overlayVisible, setOverlayVisible] = useState(true)
-  const [playerReady, setPlayerReady] = useState(false)
+function clamp(value: number, min: number, max: number) {
+  return Math.min(max, Math.max(min, value))
+}
+
+function getVimeoId(videoUrl: string) {
+  const idMatch = videoUrl.match(/vimeo\.com\/(?:video\/)?(\d+)/)
+  if (idMatch?.[1]) {
+    return idMatch[1]
+  }
+  return videoUrl.replace(/\D/g, "")
+}
+
+export function VimeoHeroPlayer({
+  videoUrl,
+  eyebrow = "Overview Video",
+  title,
+  description,
+  ctaLabel = "Watch now",
+  posterSrc = "/cards.jpg",
+}: VimeoHeroPlayerProps) {
+  const frameRef = useRef<HTMLDivElement>(null)
+  const timeoutRef = useRef<number | null>(null)
+  const rafRef = useRef<number | null>(null)
+  const autoStartedRef = useRef(false)
+  const [scrollFade, setScrollFade] = useState(0)
+  const [isStarting, setIsStarting] = useState(false)
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [shouldLoadPlayer, setShouldLoadPlayer] = useState(false)
 
   useEffect(() => {
-    let intervalId: number | null = null
-
-    const cleanup = () => {
-      if (intervalId) {
-        window.clearInterval(intervalId)
+    return () => {
+      if (timeoutRef.current) {
+        window.clearTimeout(timeoutRef.current)
       }
-      if (playerRef.current) {
-        playerRef.current.off("loaded", handleLoaded)
-        playerRef.current.off("play", handlePlay)
+      if (rafRef.current) {
+        window.cancelAnimationFrame(rafRef.current)
       }
-      playerRef.current = null
-    }
-
-    const handleLoaded = async () => {
-      setPlayerReady(true)
-      if (!playerRef.current) return
-      try {
-        if (freezeTimeSeconds > 0) {
-          await playerRef.current.setCurrentTime(freezeTimeSeconds)
-          await playerRef.current.pause()
-        } else {
-          await playerRef.current.pause()
-          await playerRef.current.setCurrentTime(0)
-        }
-      } catch (error) {
-        console.warn("Unable to prepare Vimeo frame", error)
-      }
-    }
-
-    const handlePlay = () => {
-      setOverlayVisible(false)
-    }
-
-    const tryInitPlayer = () => {
-      if (!iframeRef.current || !window.Vimeo?.Player) {
-        return false
-      }
-      playerRef.current = new window.Vimeo.Player(iframeRef.current)
-      playerRef.current.on("loaded", handleLoaded)
-      playerRef.current.on("play", handlePlay)
-      return true
-    }
-
-    if (!tryInitPlayer()) {
-      intervalId = window.setInterval(() => {
-        if (tryInitPlayer() && intervalId) {
-          window.clearInterval(intervalId)
-          intervalId = null
-        }
-      }, 200)
-    }
-
-    return cleanup
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [videoUrl, freezeTimeSeconds])
-
-  const handleStart = useCallback(async () => {
-    if (!playerRef.current) return
-    try {
-      await playerRef.current.setCurrentTime(0)
-      await playerRef.current.play()
-    } catch (error) {
-      console.warn("Unable to start Vimeo playback", error)
     }
   }, [])
 
+  const startPlayback = useCallback(() => {
+    if (isStarting || isPlaying) return
+    setIsStarting(true)
+    timeoutRef.current = window.setTimeout(() => {
+      setShouldLoadPlayer(true)
+      setIsPlaying(true)
+      setIsStarting(false)
+    }, 420)
+  }, [isPlaying, isStarting])
+
+  useEffect(() => {
+    const updateScroll = () => {
+      if (!frameRef.current || isPlaying || isStarting) return
+      const rect = frameRef.current.getBoundingClientRect()
+      const viewportHeight = window.innerHeight
+      const start = viewportHeight * 0.92
+      const end = viewportHeight * 0.32
+      const progress = clamp((start - rect.top) / (start - end), 0, 1)
+      setScrollFade(progress)
+      const nextTextOpacity = clamp(1 - progress, 0, 1)
+
+      if (nextTextOpacity <= 0.12 && !autoStartedRef.current) {
+        autoStartedRef.current = true
+        startPlayback()
+      }
+    }
+
+    const onScrollOrResize = () => {
+      if (rafRef.current) return
+      rafRef.current = window.requestAnimationFrame(() => {
+        rafRef.current = null
+        updateScroll()
+      })
+    }
+
+    updateScroll()
+    window.addEventListener("scroll", onScrollOrResize, { passive: true })
+    window.addEventListener("resize", onScrollOrResize)
+    return () => {
+      window.removeEventListener("scroll", onScrollOrResize)
+      window.removeEventListener("resize", onScrollOrResize)
+    }
+  }, [isPlaying, isStarting, startPlayback])
+
+  const vimeoId = useMemo(() => getVimeoId(videoUrl), [videoUrl])
+  const playerSrc = useMemo(() => {
+    return `https://player.vimeo.com/video/${vimeoId}?autoplay=1&autopause=0&muted=1&playsinline=1&title=0&byline=0&portrait=0`
+  }, [vimeoId])
+
+  const textOpacity = isPlaying || isStarting ? 0 : clamp(1 - scrollFade, 0, 1)
+  const textOffset = Math.round((1 - textOpacity) * 26)
+
   return (
-    <div className="relative h-full w-full">
-      <iframe
-        ref={iframeRef}
-        title="vimeo-player"
-        src={`${videoUrl}?badge=0&autopause=0&player_id=hero-vimeo`}
-        className="absolute inset-0 h-full w-full"
-        frameBorder="0"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-        allowFullScreen
+    <div ref={frameRef} className="relative h-full w-full overflow-hidden">
+      <Image
+        src={posterSrc}
+        alt="79 Ratio video cover"
+        fill
+        sizes="(min-width: 768px) 1100px, 100vw"
+        className="object-cover opacity-56"
       />
-      <button
-        type="button"
-        aria-label="Play 79 Ratio overview video"
-        onClick={handleStart}
-        disabled={!playerReady}
+
+      {shouldLoadPlayer ? (
+        <iframe
+          title="79 Ratio overview video"
+          src={playerSrc}
+          className={cn(
+            "absolute inset-0 h-full w-full transition-opacity duration-700",
+            isPlaying ? "opacity-100" : "opacity-0"
+          )}
+          frameBorder="0"
+          referrerPolicy="strict-origin-when-cross-origin"
+          loading="eager"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          allowFullScreen
+        />
+      ) : null}
+
+      <div
         className={cn(
-          "absolute inset-0 flex items-center justify-center overflow-hidden px-6 transition-opacity duration-500",
-          "bg-gradient-to-b from-black/70 via-black/50 to-black/80 backdrop-blur-sm",
-          overlayVisible && playerReady ? "opacity-100" : "opacity-0 pointer-events-none"
+          "pointer-events-none absolute inset-0 bg-gradient-to-b from-black/74 via-black/55 to-black/82 transition-opacity duration-700",
+          isPlaying ? "opacity-0" : "opacity-100"
+        )}
+      />
+
+      <div
+        className={cn(
+          "absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center transition-opacity duration-700",
+          isPlaying ? "opacity-0 pointer-events-none" : "opacity-100"
         )}
       >
-        <span className="sr-only">Play video</span>
-        <Image
-          src="/bg.png"
-          alt="79 Ratio preview background"
-          fill
-          className="object-cover opacity-60"
-          priority
-        />
-        <div className="relative flex items-center justify-center">
-          <div className="logo-glow" aria-hidden="true" />
+        <div
+          className="relative mb-6 flex justify-center transition-all duration-700"
+          style={{
+            opacity: isStarting ? 0 : 1,
+            transform: isStarting ? "translateY(-8px) scale(0.96)" : "translateY(0px) scale(1)",
+          }}
+        >
+          <div className="absolute inset-0 rounded-full bg-primary/30 blur-3xl" aria-hidden="true" />
           <Image
-            src="/79ratio-logo.png"
+            src="/79ratio-logo.webp"
             alt="79 Ratio logo"
-            width={320}
-            height={320}
-            className="logo-fade-overlay relative z-10"
-            priority
+            width={260}
+            height={84}
+            className="relative z-10 h-16 w-auto"
           />
         </div>
-      </button>
+
+        <div
+          className="mx-auto max-w-3xl space-y-4 transition-all duration-300"
+          style={{ opacity: textOpacity, transform: `translateY(${textOffset}px)` }}
+        >
+          <p className="text-sm uppercase tracking-[0.14em] text-primary">{eyebrow}</p>
+          <h2 className="text-2xl font-bold text-primary md:text-3xl">{title}</h2>
+          <p className="mx-auto max-w-2xl text-base text-white/92">{description}</p>
+          <button
+            type="button"
+            onClick={startPlayback}
+            disabled={isStarting}
+            className="inline-flex items-center rounded-md border border-primary/60 bg-black/65 px-5 py-2.5 font-medium text-primary transition-colors hover:border-primary hover:text-[var(--primary-soft)] disabled:opacity-70"
+          >
+            {isStarting ? "Starting video..." : ctaLabel}
+          </button>
+        </div>
+      </div>
     </div>
   )
 }

@@ -7,38 +7,38 @@ const services = [
     icon: Monitor,
     title: "24/7/365 Monitoring",
     description:
-      "Proactive network monitoring and threat detection to prevent issues before they impact your business operations.",
+      "We keep a constant watch on your environment and catch issues early, before your team feels them.",
     features: ["Real-time alerts", "Performance optimization", "Threat detection"],
   },
   {
     icon: Shield,
     title: "Cybersecurity Solutions",
-    description: "Comprehensive security measures including firewalls, endpoint protection, and compliance management.",
+    description: "Layered protection, practical policy support, and clear guidance that keep risk under control.",
     features: ["Multi-layered protection", "Compliance support", "Security training"],
   },
   {
     icon: Cloud,
     title: "Cloud Management",
     description:
-      "Expert cloud migration, optimization, and management services for Microsoft 365, AWS, and Azure platforms.",
+      "Hands-on support for Microsoft 365, AWS, and Azure so your cloud stays secure, fast, and cost-aware.",
     features: ["Cloud migration", "Cost optimization", "Performance tuning"],
   },
   {
     icon: HardDrive,
     title: "Backup & Recovery",
-    description: "Reliable data protection with automated backups and rapid disaster recovery solutions.",
+    description: "Reliable backups and tested recovery plans so one bad day does not become a business disaster.",
     features: ["Automated backups", "Quick recovery", "Business continuity"],
   },
   {
     icon: Headphones,
     title: "Help Desk Support",
-    description: "Responsive technical support with local expertise and personalized service for your team.",
+    description: "Friendly, responsive support from people who know your team and your systems.",
     features: ["Local support", "Quick response", "Expert technicians"],
   },
   {
     icon: Settings,
     title: "IT Strategy & Planning",
-    description: "Strategic technology planning and implementation to align IT with your business objectives.",
+    description: "Practical planning that connects technology decisions to business goals, budget, and growth.",
     features: ["Technology roadmap", "Budget planning", "Growth strategy"],
   },
 ]
@@ -75,10 +75,10 @@ export function ServicesOverview() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl lg:text-5xl font-bold text-primary text-balance">Comprehensive IT Solutions</h2>
+          <h2 className="text-3xl lg:text-5xl font-bold text-primary text-balance">IT support that actually feels supportive</h2>
           <p className="text-xl text-[var(--foreground)] max-w-3xl mx-auto text-pretty">
-            From proactive monitoring to strategic planning, we provide the complete IT infrastructure your business
-            needs to thrive in today's digital landscape.
+            From monitoring and cybersecurity to strategy and help desk, we help your team stay productive without
+            constant technology friction.
           </p>
         </div>
 
@@ -125,7 +125,7 @@ export function ServicesOverview() {
         <div className="text-center">
           <Button asChild size="lg" className="text-lg px-8">
             <Link prefetch={false} href="/services" className="inline-flex items-center gap-2">
-              View All Services
+              Explore all services
               <ArrowRight className="w-4 h-4" />
             </Link>
           </Button>

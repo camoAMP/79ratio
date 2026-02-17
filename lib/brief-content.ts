@@ -65,120 +65,120 @@ export interface NavDropdown {
 
 export const homeContent = {
   hero: {
-    headline: "Technology should not feel fragile.",
+    headline: "Your technology should feel steady, not stressful.",
     subheadline:
-      "Most organizations do not struggle because of bad tools. They struggle because their technology was never designed to hold up over time.",
+      "Most teams are not failing because they picked the wrong tools. Things break down when systems are layered over time without a clear plan.",
     body:
-      "We help businesses build and manage technology environments that are stable, secure, and quietly effective, so IT stops demanding attention and starts doing its job.",
-    primaryCta: { label: "See how we think about this", href: "/our-approach" },
-    secondaryCta: { label: "Talk through what is going on", href: "/talk-with-us" },
+      "We help you simplify the environment, reduce risk, and keep day-to-day work moving without constant IT fire drills.",
+    primaryCta: { label: "See our approach", href: "/our-approach" },
+    secondaryCta: { label: "Talk with our team", href: "/talk-with-us" },
   },
   signalsIntro:
-    "You may not be dealing with a crisis, but if any of this resonates, your environment is probably under more strain than it should be.",
+    "You might not be in crisis, but if these patterns sound familiar, your environment is carrying more stress than it should.",
   signals: [
     {
       slug: "clarity" as const,
       title: "We Do Not Have Clarity Into Our Technology",
-      summary: "Leadership lacks a clear, current picture of the environment.",
+      summary: "Leadership cannot get a clear, current view of what is really happening.",
       details:
-        "Technology discussions feel abstract, planning depends on key people, and confidence depends on trust instead of visibility.",
+        "Tech conversations feel abstract, planning depends on a few people, and confidence comes from trust instead of visibility.",
       ctaLabel: "Explore this challenge",
       ctaHref: "/challenges?challenge=clarity",
     },
     {
       slug: "security-compliance-risk" as const,
       title: "Security and Compliance Risk",
-      summary: "Security feels like checklists instead of a cohesive system.",
+      summary: "Security feels reactive and checklist-driven instead of steady and connected.",
       details:
-        "Tools exist, but confidence does not. Risk discussions rely on hope, and compliance feels episodic instead of steady.",
+        "You have tools, but not confidence. Risk talks feel uncertain, and compliance shows up as recurring fire drills.",
       ctaLabel: "See the risk pattern",
       ctaHref: "/challenges?challenge=security-compliance-risk",
     },
     {
       slug: "it-bottleneck" as const,
       title: "IT Is Slowing the Business Down",
-      summary: "Simple changes take too long and momentum feels constrained.",
+      summary: "Simple changes take too long and everyday momentum gets stuck.",
       details:
-        "Systems technically function, but friction is everywhere. Teams workaround tools and improvements feel expensive.",
+        "Systems are technically running, but friction is everywhere. Teams rely on workarounds and improvements feel harder than they should.",
       ctaLabel: "Review this bottleneck",
       ctaHref: "/challenges?challenge=it-bottleneck",
     },
     {
       slug: "growth-outpaced-systems" as const,
       title: "Growth Has Outpaced Systems",
-      summary: "Growth is succeeding, but the foundation is strained.",
+      summary: "The business is growing, but the foundation is under strain.",
       details:
-        "Processes that once worked now feel brittle. Complexity climbs, and scaling requires disproportionate effort.",
+        "Processes that used to work now feel brittle. Complexity keeps rising, and scale takes too much effort.",
       ctaLabel: "Assess growth strain",
       ctaHref: "/challenges?challenge=growth-outpaced-systems",
     },
     {
       slug: "outgrown-it-provider" as const,
       title: "We Have Outgrown Our IT Provider",
-      summary: "Support is responsive, but the model no longer fits.",
+      summary: "Support is responsive, but the relationship no longer matches the business.",
       details:
-        "Conversations stay tactical, planning is fragmented, and leadership needs guidance that evolves with the business.",
+        "Conversations stay tactical, planning is fragmented, and leadership needs guidance that grows with the company.",
       ctaLabel: "Evaluate fit",
       ctaHref: "/challenges?challenge=outgrown-it-provider",
     },
   ],
   signalCtaCard: {
-    title: "Need a fast read on where this fits?",
-    summary: "Talk through your situation and we will help you identify the right challenge lens.",
+    title: "Not sure which challenge fits best?",
+    summary: "Tell us what you are seeing and we will help you pinpoint the real pattern.",
     details:
-      "No pressure, no generic pitch. Just a calm conversation to understand what is actually happening in your environment.",
-    ctaLabel: "Talk with us",
+      "No pressure and no canned pitch. Just a practical conversation about what is happening in your environment.",
+    ctaLabel: "Talk with our team",
     ctaHref: "/talk-with-us",
   },
   reframe: {
-    headline: "The problem usually is not IT. It is the absence of a long-term system.",
+    headline: "Most IT pain is not one bad tool. It is a system that grew without a plan.",
     body: [
-      "Technology environments evolve one decision at a time. Under pressure and limited context, complexity compounds and hidden fragility accumulates.",
-      "Technology should be engineered like anything critical: intentionally, with structure, and with a plan for how it ages.",
+      "Technology changes one decision at a time. Under pressure, complexity piles up and hidden fragility follows.",
+      "Critical systems need structure, ownership, and a plan for how they evolve over time.",
     ],
   },
   principles: [
     {
       title: "Technology Is a Living System",
       description:
-        "Every environment changes over time. If it is not actively guided, entropy takes over.",
+        "Every environment changes over time. If no one is steering it, entropy wins.",
     },
     {
       title: "Security Is About Resilience, Not Fear",
       description:
-        "Real security reduces risk quietly and continuously without relying on constant panic.",
+        "Good security quietly reduces risk every day without constant panic.",
     },
     {
       title: "Stability Is the Goal",
       description:
-        "The best environments are dependable, predictable, and boring in the best way.",
+        "The best environments are dependable and predictable, even when things get busy.",
     },
     {
       title: "Clarity Changes Behavior",
       description:
-        "When systems are well designed, decisions simplify and teams stop working around tools.",
+        "When systems are clear, decisions get easier and teams stop working around the tools.",
     },
   ],
   workingWithUs: [
     {
       title: "We slow down before we speed up",
       description:
-        "Before recommending anything, we focus on how your environment behaves, not just how it is documented.",
+        "Before we recommend anything, we learn how your environment actually behaves, not just how it is documented.",
     },
     {
       title: "We bring structure to complexity",
       description:
-        "You gain visibility into what exists, what matters, and where risk or inefficiency is accumulating.",
+        "You get clear visibility into what exists, what matters, and where risk or inefficiency is building.",
     },
     {
       title: "We design for durability",
       description:
-        "Solutions are selected with their full lifecycle in mind, not only for immediate relief.",
+        "We choose solutions for the full lifecycle, not just short-term relief.",
     },
     {
       title: "We stay involved",
       description:
-        "Technology does not stand still. Our role is ongoing stewardship and vigilance.",
+        "Technology never stands still. We stay engaged so systems keep pace with the business.",
     },
   ],
   outcomes: [
@@ -188,7 +188,7 @@ export const homeContent = {
     "Systems that support growth instead of resisting it",
   ],
   fit: {
-    headline: "We are selective by design.",
+    headline: "Fit matters, and we are intentional about it.",
     goodFit: [
       "See technology as critical to operations and risk",
       "Want long-term stability, not short-term fixes",
@@ -202,7 +202,7 @@ export const homeContent = {
     ],
   },
   nextSteps: {
-    headline: "If you are thinking about technology differently, here are a few ways to continue.",
+    headline: "If this sounds like what you are dealing with, here are a few ways to move forward.",
     ctas: [
       { label: "Talk through your situation", href: "/talk-with-us" },
       { label: "Request an assessment", href: "/talk-with-us#request-assessment" },
@@ -210,7 +210,7 @@ export const homeContent = {
     ],
   },
   quietClose:
-    "You do not need more tools. You need an environment that can carry the weight of your business.",
+    "You probably do not need more tools. You need systems that can carry the weight of your business.",
 }
 
 export const challengesOrder: ChallengeSlug[] = [
@@ -237,11 +237,11 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
   clarity: {
     slug: "clarity",
     title: "We Do Not Have Clarity Into Our Technology",
-    entryHeadline: "Lack of clarity is often the first real warning sign.",
+    entryHeadline: "When tech is hard to explain, that is the warning sign.",
     entrySubheadline:
-      "Not because technology is failing, but because no system exists to make it understandable at a leadership level.",
+      "It usually does not mean things are broken. It means no one built a clear view leadership can actually use.",
     looksLikeIntro:
-      "When there is no clear picture of the technology environment, it rarely feels chaotic. It feels uncertain.",
+      "This usually does not feel chaotic. It feels uncertain and hard to pin down.",
     looksLikeSignals: [
       "Leaders rely on summaries instead of visibility",
       "Technology decisions feel harder than they should",
@@ -249,39 +249,39 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
       "Planning depends heavily on a few key people",
       "Confidence exists, but it is based more on trust than understanding",
     ],
-    causeHeadline: "Most organizations were never given a way to see technology as a system.",
+    causeHeadline: "Most teams were never given a practical way to see IT as one connected system.",
     causeBody: [
       "Technology environments often grow faster than the frameworks used to understand them. Tools are added, responsibilities shift, and documentation ages, but no unifying model emerges.",
       "Leadership ends up seeing fragments: a security report here, a ticket summary there, an outdated diagram elsewhere.",
       "Without a lifecycle view, clarity fades even when the environment is actively managed.",
     ],
-    whyMattersIntro: "When clarity is missing, decisions slow down and risk becomes abstract.",
+    whyMattersIntro: "When clarity is missing, decisions slow down and risk stays fuzzy.",
     whyMattersBullets: [
       "Strategic planning lacks solid grounding",
       "Technology discussions feel opaque or overly technical",
       "Risk is hard to quantify or prioritize",
       "Confidence depends on individuals instead of systems",
     ],
-    perspectiveHeadline: "Clarity is not a report. It is an outcome of intentional design.",
+    perspectiveHeadline: "Clarity is not a one-time report. It is something you design into the environment.",
     perspectiveBody: [
       "At 79 Ratio, we build environments that are understandable at the leadership level, not only operable at the technical level.",
       "When systems, documentation, and decision-making are structured well, visibility becomes natural instead of forced.",
     ],
-    whatChangesIntro: "When clarity is built into the environment:",
+    whatChangesIntro: "When clarity is built in:",
     whatChangesBullets: [
       "Decisions feel grounded instead of speculative",
       "Risk becomes visible and discussable",
       "Planning improves across technology, finance, and operations",
       "Confidence comes from understanding, not hope",
     ],
-    shouldYouActIntro: "This challenge usually deserves attention if:",
+    shouldYouActIntro: "You should probably address this now if:",
     shouldYouActBullets: [
       "Leadership lacks a clear, current picture of the environment",
       "Technology discussions feel abstract or too technical",
       "Planning depends heavily on specific individuals",
       "Risk is discussed but not clearly visualized",
     ],
-    nextStepsIntro: "If this resonates, here are a few ways to continue:",
+    nextStepsIntro: "If this sounds familiar, here are good next steps:",
     nextSteps: [
       {
         label: "Talk through what feels unclear",
@@ -300,16 +300,16 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
       },
     ],
     close:
-      "Clarity is not about knowing every detail. It is about knowing the right things at the right level with confidence.",
+      "You do not need every technical detail. You need the right picture, at the right level, at the right time.",
   },
   "security-compliance-risk": {
     slug: "security-compliance-risk",
     title: "Security and Compliance Risk",
-    entryHeadline: "When security feels uncertain, risk is already present.",
+    entryHeadline: "If security feels shaky, there is usually a real reason.",
     entrySubheadline:
-      "Not because something has gone wrong, but because security has not been designed as a system.",
+      "Not always because something major already happened, but because the security model is fragmented.",
     looksLikeIntro:
-      "Security and compliance risk rarely appears as one event. It usually appears as persistent unease.",
+      "Security risk usually shows up as ongoing stress, not one big event.",
     looksLikeSignals: [
       "Security tools are in place, but confidence in posture is low",
       "Compliance feels reactive and documentation-heavy",
@@ -317,39 +317,39 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
       "Decisions are made to check boxes instead of reducing real risk",
       "Leadership hopes nothing happens but does not feel prepared",
     ],
-    causeHeadline: "Security problems are usually caused by fragmentation, not attackers alone.",
+    causeHeadline: "The usual issue is fragmentation over time, not one missing product.",
     causeBody: [
       "Most organizations accumulate controls one requirement, vendor, or incident at a time.",
       "Over time that creates overlap, unclear ownership, inconsistent policy, and blind spots between systems.",
       "Without a unified model, security becomes noisy, expensive, and fragile even with good tools.",
     ],
-    whyMattersIntro: "Security and compliance risk does not just threaten data. It changes behavior.",
+    whyMattersIntro: "Security uncertainty does not just threaten data. It changes how leaders and teams operate.",
     whyMattersBullets: [
       "Leaders hesitate because they do not trust the environment",
       "Teams avoid change out of fear of unintended consequences",
       "Compliance becomes a recurring fire drill",
       "Risk becomes constant background pressure",
     ],
-    perspectiveHeadline: "Security is not a product. It is a discipline.",
+    perspectiveHeadline: "Security is a practice, not a product.",
     perspectiveBody: [
       "We treat security and compliance as integrated parts of the technology lifecycle, not bolt-on tools.",
       "The goal is resilience, visibility, and informed decision-making so organizations can operate with confidence.",
     ],
-    whatChangesIntro: "When security is approached as a system:",
+    whatChangesIntro: "When security is treated as a system:",
     whatChangesBullets: [
       "Risk becomes visible and measurable",
       "Compliance stops feeling episodic",
       "Fewer alerts matter more",
       "Leadership confidence increases in regulated environments",
     ],
-    shouldYouActIntro: "This usually deserves attention if:",
+    shouldYouActIntro: "This deserves attention if:",
     shouldYouActBullets: [
       "Security tools exist but do not feel cohesive",
       "Compliance requirements feel stressful or disruptive",
       "Risk discussions rely on hope instead of clarity",
       "Leadership needs confidence, not constant reassurance",
     ],
-    nextStepsIntro: "If this sounds familiar, here are a few ways to continue:",
+    nextStepsIntro: "If this feels familiar, start here:",
     nextSteps: [
       {
         label: "Talk through your risk concerns",
@@ -368,15 +368,15 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
       },
     ],
     close:
-      "Security should not dominate attention, but it should never be unknown. Intentional risk management makes confidence the default.",
+      "Security should not run your day, but it should never be guesswork. Good systems make confidence the default.",
   },
   "it-bottleneck": {
     slug: "it-bottleneck",
     title: "IT Is Slowing the Business Down",
-    entryHeadline: "When IT slows the business down, something fundamental is misaligned.",
+    entryHeadline: "When IT slows momentum, the system is out of alignment.",
     entrySubheadline:
-      "Not because people are not working hard, but because systems were never designed to support how the business operates today.",
-    looksLikeIntro: "When IT becomes a bottleneck, it usually looks like friction, not failure.",
+      "People may be working hard, but the environment no longer fits how the business actually runs.",
+    looksLikeIntro: "This usually feels like daily friction, not total failure.",
     looksLikeSignals: [
       "Simple requests take longer than they should",
       "Teams build workarounds instead of relying on systems",
@@ -384,39 +384,39 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
       "Changes feel risky, even when necessary",
       "IT stays busy while business momentum remains constrained",
     ],
-    causeHeadline: "IT slows businesses down when systems evolve without intention.",
+    causeHeadline: "Bottlenecks happen when systems evolve reactively for too long.",
     causeBody: [
       "As organizations grow, technology often expands reactively: new tools for immediate problems, layered integrations under pressure, and process patches to keep moving.",
       "Over time, environments function but resist change. Dependencies multiply, knowledge silos form, and small improvements require disproportionate effort.",
       "The result is drag, not outright failure.",
     ],
-    whyMattersIntro: "When IT slows the business down, the impact goes beyond technology.",
+    whyMattersIntro: "When technology drags, the business pays for it everywhere.",
     whyMattersBullets: [
       "Opportunities take longer to act on",
       "Teams hesitate to improve processes",
       "Innovation becomes expensive and exhausting",
       "Technology starts quietly shaping what the business believes is possible",
     ],
-    perspectiveHeadline: "Technology should accelerate the business, not constrain it.",
+    perspectiveHeadline: "IT should remove drag, not create it.",
     perspectiveBody: [
       "We treat IT as an operational system, not a support function. Technology should align with how work gets done and how decisions are made.",
       "With structure and lifecycle thinking, change becomes easier and IT shifts from gatekeeper to enabler.",
     ],
-    whatChangesIntro: "When IT is aligned with the business:",
+    whatChangesIntro: "When IT and operations are aligned:",
     whatChangesBullets: [
       "Decisions move faster with less friction",
       "Teams trust systems instead of working around them",
       "Improvements require less effort and risk",
       "Leadership regains flexibility and confidence",
     ],
-    shouldYouActIntro: "This challenge usually deserves attention if:",
+    shouldYouActIntro: "You should act if:",
     shouldYouActBullets: [
       "Requests and changes feel slower than they should",
       "Teams rely on manual workarounds",
       "IT effort does not translate into business momentum",
       "You want technology to enable strategy, not limit it",
     ],
-    nextStepsIntro: "If this resonates, here are a few ways to continue:",
+    nextStepsIntro: "If this matches what you are seeing, here are good next steps:",
     nextSteps: [
       {
         label: "Talk through what is slowing things down",
@@ -435,16 +435,16 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
       },
     ],
     close:
-      "Technology should make progress easier, not require extra effort just to move forward. When systems align, momentum becomes natural.",
+      "Technology should make forward motion easier. When systems align, progress stops feeling like a fight.",
   },
   "growth-outpaced-systems": {
     slug: "growth-outpaced-systems",
     title: "Growth Has Outpaced Systems",
-    entryHeadline: "When growth outpaces systems, pressure shows up everywhere.",
+    entryHeadline: "If growth feels heavier than it should, your systems may be falling behind.",
     entrySubheadline:
-      "Not because growth is a problem, but because the systems supporting it were never designed to scale.",
+      "Growth is not the problem. The strain comes from systems that were never built to scale.",
     looksLikeIntro:
-      "When systems lag behind growth, symptoms start subtle and become increasingly familiar.",
+      "It usually starts with small friction points, then slowly becomes the new normal.",
     looksLikeSignals: [
       "Processes that worked before now feel strained",
       "Teams rely on manual steps and exceptions",
@@ -452,39 +452,39 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
       "Changes require coordination across too many people",
       "Growth creates stress instead of momentum",
     ],
-    causeHeadline: "Growth exposes the limits of systems built for a smaller organization.",
+    causeHeadline: "Growth exposes limits in systems built for an earlier stage of the business.",
     causeBody: [
       "Most systems are designed for today, not for where the business will be in two or three years.",
       "As headcount, data, and complexity rise, earlier design decisions hit their limits.",
       "What once felt flexible becomes rigid. Knowledge bottlenecks emerge. Scaling effort spikes.",
     ],
-    whyMattersIntro: "When systems cannot keep up with growth, the cost is not just technical.",
+    whyMattersIntro: "When systems cannot keep up, the cost is operational, financial, and cultural.",
     whyMattersBullets: [
       "Teams spend more time coordinating than executing",
       "Leadership attention shifts to operational friction",
       "Risk increases as workarounds multiply",
       "Scaling becomes exhausting instead of energizing",
     ],
-    perspectiveHeadline: "Growth does not fail. Systems fail to adapt.",
+    perspectiveHeadline: "Growth is not the problem. System design is.",
     perspectiveBody: [
       "We design environments with future states in mind, anticipating how systems behave as complexity increases.",
       "Lifecycle management ensures infrastructure, security, and process evolve with the business.",
     ],
-    whatChangesIntro: "When systems are designed to scale:",
+    whatChangesIntro: "When systems are built to scale:",
     whatChangesBullets: [
       "Growth feels supported instead of stressful",
       "Processes stay clear as complexity increases",
       "Technology adapts without constant reinvention",
       "Leadership can focus on direction, not friction",
     ],
-    shouldYouActIntro: "This challenge usually deserves attention if:",
+    shouldYouActIntro: "This is worth addressing now if:",
     shouldYouActBullets: [
       "Growth accelerated in recent years",
       "Systems feel increasingly strained or brittle",
       "Teams rely on exceptions to keep moving",
       "You want growth to feel durable, not delicate",
     ],
-    nextStepsIntro: "If this sounds familiar, here are a few ways to continue:",
+    nextStepsIntro: "If this sounds familiar, start here:",
     nextSteps: [
       {
         label: "Talk through growth pressure",
@@ -503,16 +503,16 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
       },
     ],
     close:
-      "Growth should create opportunity, not expose hidden limits. When systems scale intentionally, progress stays sustainable.",
+      "Growth should feel energizing, not fragile. With the right foundation, scale does not have to mean stress.",
   },
   "outgrown-it-provider": {
     slug: "outgrown-it-provider",
     title: "We Have Outgrown Our IT Provider",
-    entryHeadline: "Outgrowing your IT provider does not mean they failed.",
+    entryHeadline: "Outgrowing an IT provider is common as your business matures.",
     entrySubheadline:
-      "It usually means the business changed and the support model did not.",
+      "Usually no one failed. Your needs changed faster than the support model.",
     looksLikeIntro:
-      "Outgrowing an IT provider rarely appears as one breaking point. It appears as misalignment.",
+      "This rarely shows up as one big problem. It feels like the relationship no longer matches your stage.",
     looksLikeSignals: [
       "Support is responsive but mostly reactive",
       "Conversations focus on tickets, not direction",
@@ -520,39 +520,39 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
       "Advice feels tactical, not strategic",
       "The relationship feels stuck at a stage you already passed",
     ],
-    causeHeadline: "Most IT providers are built for stability, not evolution.",
+    causeHeadline: "Many provider models are built for maintenance, not strategic evolution.",
     causeBody: [
       "Many relationships begin with reliability and responsiveness, and that model can work well for years.",
       "As complexity, risk, and regulatory pressure rise, gaps appear around planning and lifecycle management.",
       "This is usually a scaling mismatch, not a lack of effort or care.",
     ],
-    whyMattersIntro: "When provider fit slips, the impact is subtle but real.",
+    whyMattersIntro: "When fit drifts, leadership ends up making important decisions with limited guidance.",
     whyMattersBullets: [
       "Leadership makes technology decisions without enough context",
       "Long-term risk accumulates without visibility",
       "Planning fragments across vendors and tools",
       "Confidence erodes even when support quality is acceptable",
     ],
-    perspectiveHeadline: "IT support should grow up when the business does.",
+    perspectiveHeadline: "Your technology partner should evolve as fast as your business does.",
     perspectiveBody: [
       "We act as technology stewards, not just service providers, aligning systems with where the organization is headed.",
       "The goal is not replacing a provider by default. It is replacing a model that no longer fits.",
     ],
-    whatChangesIntro: "When the technology partnership is aligned:",
+    whatChangesIntro: "When partnership fit is restored:",
     whatChangesBullets: [
       "Conversations shift from tickets to strategy",
       "Risk and lifecycle decisions become intentional",
       "Planning becomes proactive instead of reactive",
       "Leadership confidence grows as systems mature",
     ],
-    shouldYouActIntro: "This challenge usually deserves attention if:",
+    shouldYouActIntro: "Consider action if:",
     shouldYouActBullets: [
       "Your business grew in size, risk, or complexity",
       "IT conversations feel operational rather than strategic",
       "Planning happens outside the IT relationship",
       "You need a partner model that can scale with you",
     ],
-    nextStepsIntro: "If this resonates, here are a few ways to continue:",
+    nextStepsIntro: "If this resonates, here are practical next steps:",
     nextSteps: [
       {
         label: "Talk through whether the model still fits",
@@ -571,33 +571,33 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
       },
     ],
     close:
-      "Outgrowing an IT provider is often a sign of progress. When the partnership evolves, technology can mature with the business.",
+      "Outgrowing a provider is often a healthy sign. The key is moving to a model that matches where you are now.",
   },
 }
 
 export const challengesIntro = {
   headline: "Challenges We Solve",
   subheadline:
-    "Most organizations are not blocked by one broken tool. They are carrying system-level strain that built up over time.",
+    "Most teams are not blocked by one broken tool. They are dealing with system strain that built up slowly.",
   body:
-    "These challenge pages help you identify what pattern you are dealing with, why it happens, and what changes when it is addressed at the system level.",
+    "Use these pages to spot your pattern, understand why it happens, and see what changes when the root cause is addressed.",
 }
 
 export const ourApproachContent: SectionBlock[] = [
   {
     id: "entry",
     title: "Entry",
-    heading: "Our approach is designed for stability, not speed.",
+    heading: "Our approach is designed for stability, not firefighting.",
     intro:
-      "Technology works best when it is treated as a system: intentionally designed, continuously managed, and allowed to evolve without chaos.",
+      "Technology works best when it is treated as one connected system: designed intentionally, managed continuously, and improved without chaos.",
   },
   {
     id: "why-most-approaches-fall-short",
     title: "Why Most Approaches Fall Short",
     body: [
-      "Most technology problems do not come from one bad decision. They come from isolated decisions made over time.",
-      "Individually, each choice may be reasonable. Collectively, they create environments that are hard to understand, risky to change, and expensive to maintain.",
-      "Our approach brings structure to what already exists instead of forcing unnecessary replacement.",
+      "Most technology pain does not come from one bad decision. It comes from lots of isolated decisions over time.",
+      "Each choice may be reasonable on its own, but together they create environments that are hard to understand, risky to change, and expensive to maintain.",
+      "Our approach brings structure to what you already have instead of forcing unnecessary replacement.",
     ],
   },
   {
@@ -605,8 +605,8 @@ export const ourApproachContent: SectionBlock[] = [
     title: "How We Think About Technology",
     heading: "Technology is a living system.",
     body: [
-      "People change, businesses grow, threats evolve, and tools age. Without an intentional model, entropy takes over.",
-      "We look for structure over symptoms, interactions over isolated components, and behavior under future pressure.",
+      "People change, businesses grow, threats evolve, and tools age. Without a clear model, entropy takes over.",
+      "We focus on structure over symptoms, interactions over isolated tools, and behavior under future pressure.",
     ],
     bullets: [
       "Look for structure, not symptoms",
@@ -618,7 +618,7 @@ export const ourApproachContent: SectionBlock[] = [
     id: "lifecycle-management",
     title: "Lifecycle Management",
     heading: "Lifecycle management is the foundation.",
-    intro: "We manage technology across its full lifecycle, not as disconnected projects.",
+    intro: "We manage technology across its full lifecycle, not as disconnected one-off projects.",
     bullets: [
       "Design: intentional choices for current and future needs",
       "Implementation: systems that integrate cleanly and predictably",
@@ -630,10 +630,10 @@ export const ourApproachContent: SectionBlock[] = [
   {
     id: "security-as-business-function",
     title: "Security as a Business Function",
-    heading: "Security works best when it is quiet.",
+    heading: "Security works best when it is quiet and dependable.",
     body: [
-      "We do not treat security as a separate layer or an endless alarm stream. It is integrated into the lifecycle of the environment itself.",
-      "The goal is resilience, clarity, and confidence, not performative activity.",
+      "We do not treat security as a separate layer or an endless stream of alarms. It is built into how the environment is designed and run.",
+      "The goal is resilience, clarity, and confidence, not security theater.",
     ],
     bullets: [
       "Reduce risk through design, not only detection",
@@ -645,7 +645,7 @@ export const ourApproachContent: SectionBlock[] = [
   {
     id: "working-with-us",
     title: "What Working With Us Looks Like",
-    heading: "What to expect when you engage with us.",
+    heading: "What to expect when you work with us.",
     steps: [
       {
         title: "We start with understanding",
@@ -655,7 +655,7 @@ export const ourApproachContent: SectionBlock[] = [
       {
         title: "We bring structure and visibility",
         description:
-          "We clarify what exists, how systems interact, where risk accumulates, and what truly matters.",
+          "We clarify what exists, how systems connect, where risk is building, and what matters most.",
       },
       {
         title: "We design for durability",
@@ -665,7 +665,7 @@ export const ourApproachContent: SectionBlock[] = [
       {
         title: "We stay involved",
         description:
-          "Stewardship continues after implementation so systems stay aligned as the business evolves.",
+          "Our stewardship continues after implementation so systems stay aligned as your business evolves.",
       },
     ],
   },
@@ -717,8 +717,8 @@ export const ourApproachContent: SectionBlock[] = [
     id: "close",
     title: "Close",
     body: [
-      "Technology does not need to be exciting. It needs to be dependable.",
-      "When systems are designed to endure, everything else gets easier.",
+      "Technology does not need to be flashy. It needs to be dependable.",
+      "When systems are built to last, everything else gets easier.",
     ],
   },
 ]
@@ -729,14 +729,14 @@ export const whoWeAreForContent: SectionBlock[] = [
     title: "Entry",
     heading: "We are not the right partner for every organization.",
     intro:
-      "That is intentional. Our work is most effective when expectations, mindset, and goals align from the start.",
+      "That is intentional. Our work is strongest when expectations, mindset, and goals align from day one.",
   },
   {
     id: "why-fit-matters",
     title: "Why Fit Matters",
     body: [
-      "Technology partnerships fail less from competence and more from misalignment around planning, risk, ownership, and long-term thinking.",
-      "This page helps you quickly determine whether our approach is likely to fit your organization.",
+      "Technology partnerships usually fail from misalignment, not from lack of effort or skill.",
+      "This page helps you quickly decide whether our approach is a fit for your organization.",
     ],
   },
   {
@@ -774,7 +774,7 @@ export const whoWeAreForContent: SectionBlock[] = [
       "You want quick fixes without long-term consideration",
       "You prefer minimal visibility into your environment",
     ],
-    note: "This is not a value judgment. It is an alignment decision.",
+    note: "This is not a value judgment. It is simply an alignment decision.",
   },
   {
     id: "growth-and-transitions",
@@ -804,7 +804,7 @@ export const whoWeAreForContent: SectionBlock[] = [
     id: "if-you-are-unsure",
     title: "If You Are Unsure",
     body: [
-      "Many clients start with a simple conversation to determine alignment before making any commitment.",
+      "Many clients start with a simple conversation to check fit before making any commitment.",
     ],
   },
   {
@@ -832,8 +832,8 @@ export const whoWeAreForContent: SectionBlock[] = [
     id: "close",
     title: "Close",
     body: [
-      "The right technology partner does not only solve problems. They fit how your organization thinks and operates.",
-      "When alignment exists, everything works better.",
+      "The right technology partner does more than solve tickets. They fit how your organization thinks and operates.",
+      "When that alignment exists, everything works better.",
     ],
   },
 ]
@@ -842,24 +842,24 @@ export const talkWithUsContent: SectionBlock[] = [
   {
     id: "entry",
     title: "Entry",
-    heading: "A conversation is often the right first step.",
+    heading: "Start with a real conversation.",
     intro:
-      "Not a sales pitch. Not a commitment. Just a chance to talk through what is going on and see whether alignment exists.",
+      "If something feels off, we can talk it through. No pressure and no commitment, just a clear conversation about what you are seeing.",
   },
   {
     id: "what-it-is-and-is-not",
     title: "What This Conversation Is and Is Not",
     body: [
-      "Reaching out does not mean you decided to change providers or start a project.",
-      "It usually means you are noticing patterns, asking questions, or wanting clarity before action.",
+      "Most people who reach out are not ready to launch a project yet.",
+      "They usually want a trusted sounding board before making a bigger technology decision.",
     ],
     bullets: [
-      "Calm and exploratory",
-      "Focused on understanding, not selling",
-      "Grounded in your context, not generic advice",
+      "Straightforward and low-pressure",
+      "Centered on your specific situation",
+      "Useful even if you choose not to move forward with us",
     ],
     note:
-      "This is not a scripted sales call, pressure-driven consultation, or a commitment to move forward.",
+      "If we are not the right fit, we will tell you directly.",
   },
   {
     id: "what-we-discuss",
@@ -883,15 +883,15 @@ export const talkWithUsContent: SectionBlock[] = [
       },
       {
         title: "Step 2 - We ask questions",
-        description: "We ask to understand how the environment actually behaves.",
+        description: "We ask questions to understand how the environment actually behaves.",
       },
       {
         title: "Step 3 - We reflect back",
-        description: "We summarize what we are hearing. This often creates immediate clarity.",
+        description: "We summarize what we are hearing. This usually creates immediate clarity.",
       },
       {
         title: "Step 4 - We discuss fit honestly",
-        description: "Sometimes continuing makes sense, and sometimes another path does.",
+        description: "Sometimes moving forward makes sense, and sometimes another path does.",
       },
     ],
   },
@@ -942,7 +942,7 @@ export const talkWithUsContent: SectionBlock[] = [
     title: "A Final Note",
     body: [
       "You do not need to be in crisis to reach out.",
-      "You do not need to know the solution before starting the conversation.",
+      "You do not need to know the solution before starting a conversation.",
       "Sometimes the most valuable outcome is simply clarity.",
     ],
   },

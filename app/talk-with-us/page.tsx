@@ -19,19 +19,19 @@ const optionCards = [
   {
     id: "conversation-options",
     title: "Talk Through Your Situation",
-    description: "A low-pressure conversation focused on understanding and alignment.",
+    description: "A low-pressure call to understand what is going on and where you need clarity.",
     cta: "Start a Conversation",
   },
   {
     id: "request-assessment",
     title: "Request an Assessment",
-    description: "A structured look at your environment for clarity, risk, and lifecycle alignment.",
+    description: "A structured review of your environment, risk exposure, and system alignment.",
     cta: "Request Assessment",
   },
   {
     id: "quick-question",
     title: "Ask a Quick Question",
-    description: "A simple way to start if you are not sure which path is right yet.",
+    description: "A simple way to start if you are not sure which path fits best yet.",
     cta: "Ask a Question",
   },
 ]
@@ -108,7 +108,7 @@ export default function TalkWithUsPage() {
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Choose how you want to start</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty">
-              Nothing moves forward without agreement and intention. Start in the format that matches your context.
+              No pressure and no hard sell. Start in the format that fits your situation.
             </p>
           </div>
 
@@ -136,7 +136,7 @@ export default function TalkWithUsPage() {
             <CardHeader>
               <CardTitle className="text-2xl text-card-foreground">Start the conversation</CardTitle>
               <CardDescription className="text-muted-foreground">
-                Share a little context and we will respond with the right next step.
+                Share a little context and we will respond with the most useful next step.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -180,7 +180,7 @@ export default function TalkWithUsPage() {
 
                 <div className="space-y-2">
                   <Label htmlFor="message">What are you noticing?</Label>
-                  <Textarea id="message" className="min-h-[120px]" placeholder="Share what feels uncertain, heavy, or risky right now." />
+                  <Textarea id="message" className="min-h-[120px]" placeholder="Tell us what feels unclear, slow, risky, or harder than it should be." />
                 </div>
 
                 <Button type="submit" className="w-full">
