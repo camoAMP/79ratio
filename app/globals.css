@@ -215,9 +215,11 @@
   }
 
   .home-hero-panel {
-    background: linear-gradient(156deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.62));
+    background: linear-gradient(156deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.38));
     border-color: rgba(212, 175, 55, 0.32);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+    box-shadow:
+      0 14px 44px rgba(0, 0, 0, 0.36),
+      0 0 24px rgba(212, 175, 55, 0.14);
     backdrop-filter: none;
   }
 
@@ -226,22 +228,23 @@
       0 3px 10px rgba(0, 0, 0, 0.95),
       0 12px 28px rgba(0, 0, 0, 0.72),
       0 0 22px rgba(212, 175, 55, 0.34),
-      0 0 46px rgba(212, 175, 55, 0.2);
+      0 0 46px rgba(212, 175, 55, 0.2),
+      0 0 70px rgba(212, 175, 55, 0.1);
   }
 
   .home-hero-copy {
-    color: rgba(255, 255, 255, 0.99) !important;
+    color: rgba(255, 255, 255, 1) !important;
     text-shadow:
-      0 2px 8px rgba(0, 0, 0, 0.92),
-      0 10px 24px rgba(0, 0, 0, 0.62),
+      0 2px 6px rgba(0, 0, 0, 0.72),
+      0 6px 16px rgba(0, 0, 0, 0.44),
       0 0 16px rgba(255, 255, 255, 0.18);
   }
 
   .home-hero-copy-muted {
-    color: rgba(255, 255, 255, 0.94) !important;
+    color: rgba(255, 255, 255, 0.97) !important;
     text-shadow:
-      0 2px 8px rgba(0, 0, 0, 0.88),
-      0 8px 20px rgba(0, 0, 0, 0.56),
+      0 2px 6px rgba(0, 0, 0, 0.66),
+      0 6px 14px rgba(0, 0, 0, 0.4),
       0 0 12px rgba(255, 255, 255, 0.12);
   }
 
@@ -252,6 +255,12 @@
       0 0 30px rgba(212, 175, 55, 0.18);
   }
 
+  .brand-logo-subtle-glow {
+    filter:
+      drop-shadow(0 0 4px rgba(212, 175, 55, 0.26))
+      drop-shadow(0 0 12px rgba(212, 175, 55, 0.16));
+  }
+
   @media (max-width: 767px) {
     .hero-text-panel {
       backdrop-filter: none;
@@ -260,8 +269,11 @@
     }
 
     .home-hero-panel {
-      background: rgba(0, 0, 0, 0.82);
+      background: rgba(0, 0, 0, 0.6);
       border-color: rgba(212, 175, 55, 0.38);
+      box-shadow:
+        0 12px 32px rgba(0, 0, 0, 0.4),
+        0 0 16px rgba(212, 175, 55, 0.12);
     }
 
     .home-hero-headline {
@@ -278,6 +290,12 @@
         0 2px 7px rgba(0, 0, 0, 0.9),
         0 7px 16px rgba(0, 0, 0, 0.56);
     }
+
+    .brand-logo-subtle-glow {
+      filter:
+        drop-shadow(0 0 3px rgba(212, 175, 55, 0.22))
+        drop-shadow(0 0 8px rgba(212, 175, 55, 0.12));
+    }
   }
 
   .hero-bg-image {
@@ -288,21 +306,21 @@
     background:
       radial-gradient(
         130% 96% at 50% 46%,
-        rgba(0, 0, 0, 0.24) 0%,
-        rgba(0, 0, 0, 0.54) 54%,
-        rgba(0, 0, 0, 0.8) 100%
+        rgba(0, 0, 0, 0.08) 0%,
+        rgba(0, 0, 0, 0.28) 54%,
+        rgba(0, 0, 0, 0.5) 100%
       ),
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.62) 68%, rgba(0, 0, 0, 0.86) 100%);
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.34) 68%, rgba(0, 0, 0, 0.58) 100%);
   }
 
   /* Keep tint concentrated behind hero text and fade it toward the edges */
   .hero-bg-image + div[class*="bg-"] {
     background: radial-gradient(
         140% 120% at 40% 50%,
-        rgba(0, 0, 0, 0.55) 0%,
-        rgba(0, 0, 0, 0.35) 32%,
-        rgba(0, 0, 0, 0.12) 60%,
-        rgba(0, 0, 0, 0.05) 78%,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.16) 32%,
+        rgba(0, 0, 0, 0.05) 60%,
+        rgba(0, 0, 0, 0.02) 78%,
         rgba(0, 0, 0, 0) 100%
       )
       !important;

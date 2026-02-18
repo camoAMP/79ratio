@@ -98,7 +98,7 @@ const industriesServed = [
   {
     icon: Factory,
     title: "Manufacturers",
-    description: "OT/IT convergence security, plant-floor visibility, and supply chain resilience.",
+    description: "operations and technology convergence security, plant-floor visibility, and supply chain resilience.",
   },
   {
     icon: Building,
@@ -172,7 +172,7 @@ export default function ManagedTechnologyCybersecurityPage() {
             <CardHeader>
               <CardTitle className="text-2xl text-card-foreground">Included Capabilities</CardTitle>
               <CardDescription className="text-muted-foreground">
-                Managed IT operations and security controls inside one accountable program.
+                Managed technology operations and security controls inside one accountable program.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -205,7 +205,7 @@ export default function ManagedTechnologyCybersecurityPage() {
             <Badge className="bg-primary/10 text-primary">Included Services</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Everything Managed for You</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty">
-              Integrated IT management, automated operations, and high-trust security coverage delivered as one program.
+              Integrated technology management, automated operations, and high-trust security coverage delivered as one program.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">

@@ -79,7 +79,7 @@ const industries = [
   {
     icon: Factory,
     title: "Manufacturers",
-    description: "Plant-floor Wi-Fi, rugged device care, and OT/IT collaboration tools that never slow production.",
+    description: "Plant-floor Wi-Fi, rugged device care, and operations and technology collaboration tools that never slow production.",
   },
   {
     icon: Building,

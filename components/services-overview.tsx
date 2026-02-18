@@ -37,7 +37,7 @@ const services = [
   },
   {
     icon: Settings,
-    title: "IT Strategy & Planning",
+    title: "Technology Strategy & Planning",
     description: "Practical planning that connects technology decisions to business goals, budget, and growth.",
     features: ["Technology roadmap", "Budget planning", "Growth strategy"],
   },
@@ -75,7 +75,7 @@ export function ServicesOverview() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl lg:text-5xl font-bold text-primary text-balance">IT support that actually feels supportive</h2>
+          <h2 className="text-3xl lg:text-5xl font-bold text-primary text-balance">Technology care that feels calm, personal, and reliable</h2>
           <p className="text-xl text-[var(--foreground)] max-w-3xl mx-auto text-pretty">
             From monitoring and cybersecurity to strategy and help desk, we help your team stay productive without
             constant technology friction.

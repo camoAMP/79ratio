@@ -65,7 +65,7 @@ export default function StrategyServicesPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge className="mb-4">IT Strategy & Planning</Badge>
+                <Badge className="mb-4">Technology Strategy & Planning</Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
                   Translate Business Goals into a <span className="text-primary">Living Technology Plan</span>
                 </h1>

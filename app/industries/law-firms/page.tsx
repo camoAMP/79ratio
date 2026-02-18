@@ -80,7 +80,7 @@ export default function LawFirmsPage() {
               <div className="space-y-4">
                 <Badge className="mb-4 text-white border-white/40 bg-white/10">Legal Industry Expertise</Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
-                  IT Solutions for <span className="text-primary">Law Firms</span>
+                  Technology Solutions for <span className="text-primary">Law Firms</span>
                 </h1>
                 <p className="text-xl text-white leading-relaxed text-pretty">
                   Specialized technology solutions designed for legal practices. We understand the unique security,
@@ -90,7 +90,7 @@ export default function LawFirmsPage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="text-lg px-8">
-                  <Link href="/contact">Schedule Legal IT Consultation</Link>
+                  <Link href="/contact">Schedule Legal Technology Consultation</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-lg px-8 bg-transparent">
                   <Link href="/industries">View All Industries</Link>
@@ -152,7 +152,7 @@ export default function LawFirmsPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">
-                Comprehensive Legal IT Solutions
+                Comprehensive Legal Technology Solutions
               </h2>
               <p className="text-xl text-muted-foreground text-pretty">
                 Our specialized solutions address the unique technology needs of law firms while ensuring compliance
@@ -187,7 +187,7 @@ export default function LawFirmsPage() {
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Client Success Story</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-              See how we helped a growing law firm modernize their IT infrastructure while maintaining security and
+              See how we helped a growing law firm modernize their technology infrastructure while maintaining security and
               compliance.
             </p>
           </div>
@@ -270,14 +270,14 @@ export default function LawFirmsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">
-              Get Started Today: Ready to Modernize Your Law Firm&apos;s IT?
+              Get Started Today: Ready to Modernize Your Law Firm&apos;s technology?
             </h2>
             <p className="text-xl text-black/80 text-pretty">
               Let's discuss how our legal industry expertise can help your firm operate more efficiently while
               maintaining security and compliance.
             </p>
             <Button asChild size="lg" variant="secondary" className="text-lg px-8">
-              <Link href="/contact">Schedule Legal IT Assessment</Link>
+              <Link href="/contact">Schedule Legal Technology Assessment</Link>
             </Button>
           </div>
         </div>

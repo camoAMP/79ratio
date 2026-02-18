@@ -51,7 +51,7 @@ const services = [
     description:
       "Expert cloud migration, optimization, and management services for Microsoft 365, AWS, and Azure platforms.",
     features: ["Cloud migration planning", "Cost optimization", "Performance monitoring", "Backup & disaster recovery"],
-    benefits: ["Reduced IT costs", "Improved scalability", "Enhanced collaboration", "Business continuity"],
+    benefits: ["Reduced technology costs", "Improved scalability", "Enhanced collaboration", "Business continuity"],
   },
   {
     icon: HardDrive,
@@ -67,16 +67,16 @@ const services = [
     slug: "support",
     description: "Responsive technical support with local expertise and personalized service for your team.",
     features: ["Local technical support", "Remote assistance", "Ticket management system", "Priority support levels"],
-    benefits: ["Quick issue resolution", "Improved productivity", "Reduced IT frustration", "Expert guidance"],
+    benefits: ["Quick issue resolution", "Improved productivity", "Reduced technology frustration", "Expert guidance"],
   },
   {
     icon: Settings,
-    title: "IT Strategy & Planning",
+    title: "Technology Strategy & Planning",
     slug: "strategy",
-    description: "Strategic technology planning and implementation to align IT with your business objectives.",
+    description: "Strategic technology planning and implementation to align technology with your business objectives.",
     features: ["Technology assessments", "Strategic roadmaps", "Budget planning", "Vendor management"],
     benefits: [
-      "Aligned IT strategy",
+      "Aligned technology strategy",
       "Optimized technology spend",
       "Future-ready infrastructure",
       "Competitive advantage",
@@ -121,10 +121,10 @@ export default function ServicesPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6 max-w-4xl mx-auto hero-text-panel">
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-              Comprehensive <span className="text-primary">IT Services</span>
+              Comprehensive <span className="text-primary">Technology Services</span>
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed text-pretty">
-              From proactive monitoring to strategic planning, we provide the complete IT infrastructure your business
+              From proactive monitoring to strategic planning, we provide the complete technology infrastructure your business
               needs to thrive in today's digital landscape.
             </p>
             <Button asChild size="lg" className="text-lg px-8">
@@ -185,10 +185,10 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">
-              Ready to Transform Your IT Infrastructure?
+              Ready to Transform Your Technology Infrastructure?
             </h2>
             <p className="text-xl text-black/80 text-pretty">
-              Let's discuss your specific needs and create a customized IT solution that drives your business forward.
+              Let's discuss your specific needs and create a customized technology solution that drives your business forward.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary" className="text-lg px-8 transition-none">

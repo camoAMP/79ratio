@@ -80,9 +80,9 @@ export default function HealthcarePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 hero-text-panel">
               <div className="space-y-4">
-                <Badge className="mb-4 text-white border-white/40 bg-white/10">Healthcare IT Expertise</Badge>
+                <Badge className="mb-4 text-white border-white/40 bg-white/10">Healthcare Technology Expertise</Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-                  HIPAA-Compliant IT for <span className="text-primary">Healthcare</span>
+                  HIPAA-Compliant technology for <span className="text-primary">Healthcare</span>
                 </h1>
                 <p className="text-xl text-white leading-relaxed text-pretty">
                   Specialized technology solutions designed for healthcare providers. We ensure HIPAA compliance,
@@ -92,7 +92,7 @@ export default function HealthcarePage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="text-lg px-8 text-white bg-white/10 border border-white/40 hover:bg-white/20">
-                  <Link href="/contact">Schedule Healthcare IT Consultation</Link>
+                  <Link href="/contact">Schedule Healthcare Technology Consultation</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-lg px-8 bg-transparent border-white text-white hover:bg-white hover:text-black">
                   <Link href="/industries">View All Industries</Link>
@@ -159,7 +159,7 @@ export default function HealthcarePage() {
                 Comprehensive HIPAA Compliance
               </h2>
               <p className="text-xl text-muted-foreground text-pretty">
-                Our healthcare IT solutions ensure full HIPAA compliance while optimizing your technology infrastructure
+                Our healthcare technology solutions ensure full HIPAA compliance while optimizing your technology infrastructure
                 for better patient care and operational efficiency.
               </p>
               <ul className="space-y-3">
@@ -175,7 +175,7 @@ export default function HealthcarePage() {
             <div className="relative">
               <Image
                 src="/hipaa-compliant-healthcare-it-infrastructure.jpg"
-                alt="HIPAA-compliant healthcare IT infrastructure and security systems"
+                alt="HIPAA-compliant healthcare technology infrastructure and security systems"
                 width={1200}
                 height={800}
                 className="w-full h-auto rounded-2xl shadow-lg"
@@ -272,14 +272,14 @@ export default function HealthcarePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">
-              Ready to Enhance Your Healthcare IT?
+              Ready to Enhance Your Healthcare technology?
             </h2>
             <p className="text-xl text-black/80 text-pretty">
               Let's discuss how our healthcare expertise can help your practice achieve HIPAA compliance while improving
               patient care through technology.
             </p>
             <Button asChild size="lg" variant="secondary" className="text-lg px-8">
-              <Link href="/contact">Schedule Healthcare IT Assessment</Link>
+              <Link href="/contact">Schedule Healthcare Technology Assessment</Link>
             </Button>
           </div>
         </div>

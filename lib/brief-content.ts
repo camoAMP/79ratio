@@ -69,7 +69,7 @@ export const homeContent = {
     subheadline:
       "Most teams are not failing because they picked the wrong tools. Things break down when systems are layered over time without a clear plan.",
     body:
-      "We help you simplify the environment, reduce risk, and keep day-to-day work moving without constant IT fire drills.",
+      "We help you simplify the environment, reduce risk, and keep day-to-day work moving without constant technology fire drills.",
     primaryCta: { label: "See our approach", href: "/our-approach" },
     secondaryCta: { label: "Talk with our team", href: "/talk-with-us" },
   },
@@ -96,7 +96,7 @@ export const homeContent = {
     },
     {
       slug: "it-bottleneck" as const,
-      title: "IT Is Slowing the Business Down",
+      title: "Technology is Slowing the Business Down",
       summary: "Simple changes take too long and everyday momentum gets stuck.",
       details:
         "Systems are technically running, but friction is everywhere. Teams rely on workarounds and improvements feel harder than they should.",
@@ -114,7 +114,7 @@ export const homeContent = {
     },
     {
       slug: "outgrown-it-provider" as const,
-      title: "We Have Outgrown Our IT Provider",
+      title: "We Have Outgrown Our Technology Partner",
       summary: "Support is responsive, but the relationship no longer matches the business.",
       details:
         "Conversations stay tactical, planning is fragmented, and leadership needs guidance that grows with the company.",
@@ -131,7 +131,7 @@ export const homeContent = {
     ctaHref: "/talk-with-us",
   },
   reframe: {
-    headline: "Most IT pain is not one bad tool. It is a system that grew without a plan.",
+    headline: "Most technology pain is not one bad tool. It is a system that grew without a plan.",
     body: [
       "Technology changes one decision at a time. Under pressure, complexity piles up and hidden fragility follows.",
       "Critical systems need structure, ownership, and a plan for how they evolve over time.",
@@ -197,7 +197,7 @@ export const homeContent = {
     ],
     notFit: [
       "Are primarily price-driven",
-      "Want IT handled with minimal thought or oversight",
+      "Want technology handled with minimal thought or oversight",
       "Prefer reactive support over intentional design",
     ],
   },
@@ -249,7 +249,7 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
       "Planning depends heavily on a few key people",
       "Confidence exists, but it is based more on trust than understanding",
     ],
-    causeHeadline: "Most teams were never given a practical way to see IT as one connected system.",
+    causeHeadline: "Most teams were never given a practical way to see technology as one connected system.",
     causeBody: [
       "Technology environments often grow faster than the frameworks used to understand them. Tools are added, responsibilities shift, and documentation ages, but no unifying model emerges.",
       "Leadership ends up seeing fragments: a security report here, a ticket summary there, an outdated diagram elsewhere.",
@@ -372,8 +372,8 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
   },
   "it-bottleneck": {
     slug: "it-bottleneck",
-    title: "IT Is Slowing the Business Down",
-    entryHeadline: "When IT slows momentum, the system is out of alignment.",
+    title: "Technology is Slowing the Business Down",
+    entryHeadline: "When technology slows momentum, the system is out of alignment.",
     entrySubheadline:
       "People may be working hard, but the environment no longer fits how the business actually runs.",
     looksLikeIntro: "This usually feels like daily friction, not total failure.",
@@ -382,7 +382,7 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
       "Teams build workarounds instead of relying on systems",
       "Technology decisions require more meetings than progress",
       "Changes feel risky, even when necessary",
-      "IT stays busy while business momentum remains constrained",
+      "Technology stays busy while business momentum remains constrained",
     ],
     causeHeadline: "Bottlenecks happen when systems evolve reactively for too long.",
     causeBody: [
@@ -397,12 +397,12 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
       "Innovation becomes expensive and exhausting",
       "Technology starts quietly shaping what the business believes is possible",
     ],
-    perspectiveHeadline: "IT should remove drag, not create it.",
+    perspectiveHeadline: "Technology should remove drag, not create it.",
     perspectiveBody: [
-      "We treat IT as an operational system, not a support function. Technology should align with how work gets done and how decisions are made.",
-      "With structure and lifecycle thinking, change becomes easier and IT shifts from gatekeeper to enabler.",
+      "We treat technology as an operational system, not a support function. Technology should align with how work gets done and how decisions are made.",
+      "With structure and lifecycle thinking, change becomes easier and technology shifts from gatekeeper to enabler.",
     ],
-    whatChangesIntro: "When IT and operations are aligned:",
+    whatChangesIntro: "When technology and operations are aligned:",
     whatChangesBullets: [
       "Decisions move faster with less friction",
       "Teams trust systems instead of working around them",
@@ -413,7 +413,7 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
     shouldYouActBullets: [
       "Requests and changes feel slower than they should",
       "Teams rely on manual workarounds",
-      "IT effort does not translate into business momentum",
+      "Technology effort does not translate into business momentum",
       "You want technology to enable strategy, not limit it",
     ],
     nextStepsIntro: "If this matches what you are seeing, here are good next steps:",
@@ -429,7 +429,7 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
         description: "A structured look at how systems, processes, and tools interact.",
       },
       {
-        label: "Learn how we align IT and operations",
+        label: "Learn how we align technology and operations",
         href: "/our-approach#working-with-us",
         description: "See how lifecycle thinking restores momentum.",
       },
@@ -507,8 +507,8 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
   },
   "outgrown-it-provider": {
     slug: "outgrown-it-provider",
-    title: "We Have Outgrown Our IT Provider",
-    entryHeadline: "Outgrowing an IT provider is common as your business matures.",
+    title: "We Have Outgrown Our Technology Partner",
+    entryHeadline: "Outgrowing a technology provider is common as your business matures.",
     entrySubheadline:
       "Usually no one failed. Your needs changed faster than the support model.",
     looksLikeIntro:
@@ -548,8 +548,8 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
     shouldYouActIntro: "Consider action if:",
     shouldYouActBullets: [
       "Your business grew in size, risk, or complexity",
-      "IT conversations feel operational rather than strategic",
-      "Planning happens outside the IT relationship",
+      "Technology conversations feel operational rather than strategic",
+      "Planning happens outside the technology relationship",
       "You need a partner model that can scale with you",
     ],
     nextStepsIntro: "If this resonates, here are practical next steps:",
@@ -769,7 +769,7 @@ export const whoWeAreForContent: SectionBlock[] = [
     heading: "We may not be the right fit if:",
     bullets: [
       "Cost is the primary decision factor",
-      "You want purely reactive IT support",
+      "You want purely reactive technology support",
       "Technology planning feels optional",
       "You want quick fixes without long-term consideration",
       "You prefer minimal visibility into your environment",
@@ -867,7 +867,7 @@ export const talkWithUsContent: SectionBlock[] = [
     bullets: [
       "What prompted you to look more closely at technology",
       "Where things feel uncertain, fragile, or heavier than they should",
-      "How IT, security, and risk decisions are currently made",
+      "How technology, security, and risk decisions are currently made",
       "What leadership cares most about right now",
       "Whether clarity, structure, or lifecycle thinking would help",
     ],

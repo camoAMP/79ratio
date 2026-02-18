@@ -31,7 +31,7 @@ const manufacturingChallenges = [
 ]
 
 const solutions = [
-  "Network segmentation between IT and OT environments",
+  "Network segmentation between technology and OT environments",
   "24/7 monitoring of production sites with predictive alerting",
   "Secure remote access for integrators and plant engineers",
   "High-availability Wi-Fi and edge computing for shop floors",
@@ -70,7 +70,7 @@ export default function ManufacturingPage() {
               <div className="space-y-4">
                 <Badge className="mb-4">Manufacturing Expertise</Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-                  Keep Production Moving with <span className="text-primary">Resilient IT & OT</span>
+                  Keep Production Moving with <span className="text-primary">Resilient technology & OT</span>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
                   We partner with plant leadership to modernize networks, secure industrial control systems, and deliver

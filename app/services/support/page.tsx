@@ -57,7 +57,7 @@ const packages = [
     description: "Co-managed pod aligned to departments with roadmap collaboration.",
     highlights: [
       "Dedicated lead engineer",
-      "Shadow IT discovery",
+      "Shadow technology discovery",
       "Executive white-glove deskside",
     ],
   },
@@ -110,7 +110,7 @@ export default function SupportServicesPage() {
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
                 <Image
                   src="/it-helpdesk-services-24-7.jpg"
-                  alt="IT help desk team supporting end users"
+                  alt="Technology help desk team supporting end users"
                   width={800}
                   height={800}
                   className="w-full h-full object-cover rounded-xl"
@@ -203,7 +203,7 @@ export default function SupportServicesPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Let&apos;s Delight Your Users</h2>
           <p className="text-lg text-muted-foreground text-pretty">
-            Pair our help desk with your internal IT team or let us own the entire user experience—we adapt to your
+            Pair our help desk with your internal technology team or let us own the entire user experience—we adapt to your
             operating model.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

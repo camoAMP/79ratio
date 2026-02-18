@@ -6,17 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Calendar, User, ArrowRight, Search, TrendingUp } from "lucide-react"
-import { blogPosts } from "@/lib/blog-posts"
-
-const categories = [
-  "All Posts",
-  "Cybersecurity",
-  "Healthcare IT",
-  "Cloud Computing",
-  "Manufacturing IT",
-  "Nonprofit IT",
-  "Data Protection",
-]
+import { blogCategories, blogPosts, getCategorySlug } from "@/lib/blog-posts"
 
 const recentPosts = blogPosts.slice(0, 4)
 
@@ -62,7 +52,7 @@ export default function BlogPage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 max-w-4xl mx-auto hero-text-panel">
-            <Badge className="mb-4 bg-primary/20 text-white border-primary/30">IT Insights & Resources</Badge>
+            <Badge className="mb-4 bg-primary/20 text-white border-primary/30">Technology Insights & Resources</Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
               Insights, Trends, and Tips from 79 Ratio’s Technology Experts
             </h1>
@@ -92,7 +82,7 @@ export default function BlogPage() {
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">Featured Articles</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-              Our most popular and impactful articles on IT best practices and industry trends.
+              Our most popular and impactful articles on technology best practices and industry trends.
             </p>
           </div>
 
@@ -103,7 +93,9 @@ export default function BlogPage() {
                 <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-border bg-card">
                   <CardHeader className="space-y-4">
                     <div className="flex items-center justify-between">
-                      <Badge variant="secondary">{post.category}</Badge>
+                      <Link href={`/blog/category/${getCategorySlug(post.category)}`}>
+                        <Badge variant="secondary">{post.category}</Badge>
+                      </Link>
                       <div className="flex items-center text-sm text-muted-foreground">
                         <TrendingUp className="w-4 h-4 mr-1" />
                         Featured
@@ -150,9 +142,12 @@ export default function BlogPage() {
               <div className="flex items-center justify-between">
                 <h2 className="text-2xl font-bold text-foreground">All Articles</h2>
                 <div className="flex flex-wrap gap-2">
-                  {categories.map((category, index) => (
-                    <Button key={index} variant={index === 0 ? "default" : "outline"} size="sm" className="text-xs">
-                      {category}
+                  <Button asChild variant="default" size="sm" className="text-xs">
+                    <Link href="/blog">All Posts</Link>
+                  </Button>
+                  {blogCategories.map((category) => (
+                    <Button key={category.slug} asChild variant="outline" size="sm" className="text-xs">
+                      <Link href={`/blog/category/${category.slug}`}>{category.label}</Link>
                     </Button>
                   ))}
                 </div>
@@ -165,9 +160,11 @@ export default function BlogPage() {
                       <div className="flex items-start justify-between space-x-4">
                         <div className="flex-1 space-y-3">
                           <div className="flex items-center space-x-2">
-                            <Badge variant="secondary" className="text-xs">
-                              {post.category}
-                            </Badge>
+                            <Link href={`/blog/category/${getCategorySlug(post.category)}`}>
+                              <Badge variant="secondary" className="text-xs">
+                                {post.category}
+                              </Badge>
+                            </Link>
                             {post.featured && (
                               <Badge className="text-xs">
                                 <TrendingUp className="w-3 h-3 mr-1" />
@@ -227,9 +224,9 @@ export default function BlogPage() {
                   <CardTitle className="text-lg text-card-foreground">Categories</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  {categories.slice(1).map((category, index) => (
-                    <Button key={index} variant="ghost" className="w-full justify-start text-sm" size="sm">
-                      {category}
+                  {blogCategories.map((category) => (
+                    <Button key={category.slug} asChild variant="ghost" className="w-full justify-start text-sm" size="sm">
+                      <Link href={`/blog/category/${category.slug}`}>{category.label}</Link>
                     </Button>
                   ))}
                 </CardContent>
@@ -241,7 +238,7 @@ export default function BlogPage() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-sm text-muted-foreground">
-                    Get the latest IT insights and tips delivered to your inbox monthly.
+                    Get the latest technology insights and tips delivered to your inbox monthly.
                   </p>
                   <div className="space-y-2">
                     <Input placeholder="Your email address" type="email" />

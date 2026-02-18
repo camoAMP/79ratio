@@ -18,7 +18,7 @@ export default function MonitoringPage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-slow-drift hero-bg-image"
             style={{
-              backgroundImage: "url(/Image_fx (24).jpg)",
+              backgroundImage: "url(/Image_fx (25).jpg)",
               filter: "brightness(0.3)",
             }}
           />
@@ -55,7 +55,7 @@ export default function MonitoringPage() {
               Proactive Network <span className="text-primary">Monitoring</span>
             </h1>
             <p className="text-xl text-white leading-relaxed text-pretty max-w-3xl mx-auto">
-              Stay ahead of IT issues with our comprehensive monitoring solutions that detect and resolve problems
+              Stay ahead of technology issues with our comprehensive monitoring solutions that detect and resolve problems
               before they impact your business operations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -81,7 +81,7 @@ export default function MonitoringPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Comprehensive Monitoring Features</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our monitoring solutions provide complete visibility into your IT infrastructure with real-time alerts and
+              Our monitoring solutions provide complete visibility into your technology infrastructure with real-time alerts and
               proactive maintenance.
             </p>
           </div>
@@ -152,10 +152,10 @@ export default function MonitoringPage() {
               <div className="space-y-6">
                 {[
                   "Reduce downtime by up to 95% with proactive monitoring",
-                  "24/7/365 monitoring by certified IT professionals",
+                  "24/7/365 monitoring by certified technology professionals",
                   "Custom alerts tailored to your business needs",
                   "Comprehensive reporting and analytics",
-                  "Integration with existing IT infrastructure",
+                  "Integration with existing technology infrastructure",
                   "Scalable solutions that grow with your business",
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">

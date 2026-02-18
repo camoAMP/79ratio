@@ -12,7 +12,7 @@ const industries = [
     title: "Law Firms",
     slug: "law-firms",
     description:
-      "Specialized IT solutions for legal practices with focus on security, compliance, and client confidentiality.",
+      "Specialized technology solutions for legal practices with focus on security, compliance, and client confidentiality.",
     challenges: [
       "Client data confidentiality requirements",
       "Regulatory compliance (Bar Association rules)",
@@ -62,15 +62,15 @@ const industries = [
     icon: HandHeart,
     title: "Nonprofits",
     slug: "nonprofits",
-    description: "Cost-effective IT solutions that maximize your technology budget while supporting your mission.",
+    description: "Cost-effective technology solutions that maximize your technology budget while supporting your mission.",
     challenges: [
-      "Limited IT budgets and resources",
+      "Limited technology budgets and resources",
       "Donor data security and privacy",
       "Volunteer coordination systems",
       "Grant reporting and compliance",
     ],
     solutions: [
-      "Budget-optimized IT solutions",
+      "Budget-optimized technology solutions",
       "Secure donor management systems",
       "Cloud-based collaboration tools",
       "Compliance reporting assistance",
@@ -88,7 +88,7 @@ const industries = [
     title: "Manufacturing",
     slug: "manufacturing",
     description:
-      "Robust IT infrastructure supporting production systems, inventory management, and operational efficiency.",
+      "Robust technology infrastructure supporting production systems, inventory management, and operational efficiency.",
     challenges: [
       "Production system reliability",
       "Inventory and supply chain management",
@@ -103,8 +103,8 @@ const industries = [
     ],
     testimonial: {
       quote:
-        "79 Ratio keeps our production systems running 24/7. Their understanding of manufacturing IT needs has been crucial to our operational success.",
-      author: "David Thompson, IT Director",
+        "79 Ratio keeps our production systems running 24/7. Their understanding of manufacturing technology needs has been crucial to our operational success.",
+      author: "David Thompson, Technology Director",
       firm: "Precision Manufacturing Inc.",
     },
     image: "/professional-male-network-engineer.jpg",
@@ -154,11 +154,15 @@ export default function IndustriesPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6 max-w-4xl mx-auto hero-text-panel">
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-              Industry-Specific <span className="text-primary">IT Expertise</span>
+              Industry-Specific <span className="text-primary">Technology Expertise</span>
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed text-pretty">
               We understand the unique technology challenges and compliance requirements of your industry. Our
               specialized solutions are tailored to help your business thrive while meeting regulatory standards.
+            </p>
+            <p className="text-base text-white/90 max-w-4xl mx-auto leading-relaxed text-pretty">
+              Law firms, healthcare providers, nonprofits, manufacturing teams, financial services, professional
+              services, construction, logistics, retail, education, and many more.
             </p>
             <Button asChild size="lg" className="text-lg px-8">
               <Link href="/contact">Discuss Your Industry Needs</Link>
@@ -254,6 +258,8 @@ export default function IndustriesPage() {
               )
             })}
           </div>
+
+          <p className="mt-10 text-center text-lg text-muted-foreground">and many more.</p>
         </div>
       </section>
 
@@ -267,7 +273,7 @@ export default function IndustriesPage() {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Generic IT solutions often fall short when it comes to meeting the specific needs of different
+                  Generic technology solutions often fall short when it comes to meeting the specific needs of different
                   industries. Each sector has unique compliance requirements, security challenges, and operational
                   demands that require specialized knowledge and experience.
                 </p>
@@ -277,7 +283,7 @@ export default function IndustriesPage() {
                   environment.
                 </p>
                 <p>
-                  When you partner with 79 Ratio, you're not just getting an IT provider – you're getting a team that
+                  When you partner with 79 Ratio, you're not just getting a technology provider – you're getting a team that
                   understands your industry and is committed to helping you succeed within its unique landscape.
                 </p>
               </div>
@@ -302,7 +308,7 @@ export default function IndustriesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">
-              Ready to Experience Industry-Focused IT?
+              Ready to Experience Industry-Focused technology?
             </h2>
             <p className="text-xl text-black/80 text-pretty">
               Let's discuss how our industry expertise can help solve your specific technology challenges and drive your

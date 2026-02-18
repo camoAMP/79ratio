@@ -154,7 +154,7 @@ export default function IntegratedVoiceDataPage() {
             <div className="flex items-start gap-3">
               <CheckCircle2 className="w-6 h-6 text-primary mt-1" />
               <p className="text-muted-foreground">
-                Centralized policies and analytics provide the clarity IT needs to scale communications without chaos.
+                Centralized policies and analytics provide the clarity technology needs to scale communications without chaos.
               </p>
             </div>
           </div>

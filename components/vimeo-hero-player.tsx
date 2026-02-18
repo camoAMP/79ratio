@@ -157,7 +157,7 @@ export function VimeoHeroPlayer({
             alt="79 Ratio logo"
             width={260}
             height={84}
-            className="relative z-10 h-16 w-auto"
+            className="relative z-10 h-16 w-auto brand-logo-subtle-glow"
           />
         </div>
 

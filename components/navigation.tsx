@@ -21,7 +21,14 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" prefetch={false} className="flex items-center">
-            <Image src="/79ratio-logo.webp" alt="79 Ratio Logo" width={160} height={50} className="h-10 w-auto" priority />
+            <Image
+              src="/79ratio-logo.webp"
+              alt="79 Ratio Logo"
+              width={160}
+              height={50}
+              className="h-10 w-auto brand-logo-subtle-glow"
+              priority
+            />
           </Link>
 
           <div className="hidden md:flex items-center space-x-6">

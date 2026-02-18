@@ -62,10 +62,10 @@ export default function MonitoringPage() {
               <div className="space-y-4">
                 <Badge className="mb-4">24/7/365 Monitoring</Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-                  Proactive IT Monitoring That <span className="text-primary">Never Sleeps</span>
+                  Proactive Technology Monitoring That <span className="text-primary">Never Sleeps</span>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
-                  Our advanced monitoring systems watch over your IT infrastructure 24/7, detecting and resolving issues
+                  Our advanced monitoring systems watch over your technology infrastructure 24/7, detecting and resolving issues
                   before they impact your business operations.
                 </p>
               </div>
@@ -114,7 +114,7 @@ export default function MonitoringPage() {
               Comprehensive Monitoring Features
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-              Our monitoring solution provides complete visibility and control over your IT infrastructure.
+              Our monitoring solution provides complete visibility and control over your technology infrastructure.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ export default function MonitoringPage() {
                 Why Choose Our Monitoring Service?
               </h2>
               <p className="text-xl text-muted-foreground text-pretty">
-                Our proactive approach to IT monitoring delivers measurable business benefits and peace of mind.
+                Our proactive approach to technology monitoring delivers measurable business benefits and peace of mind.
               </p>
               <ul className="space-y-4">
                 {benefits.map((benefit, index) => (
@@ -163,7 +163,7 @@ export default function MonitoringPage() {
             <div className="relative">
               <Image
                 src="/it-professional-monitoring-network-security-dashbo.jpg"
-                alt="IT professional monitoring network security dashboard"
+                alt="Technology professional monitoring network security dashboard"
                 width={1200}
                 height={800}
                 className="w-full h-auto rounded-2xl shadow-lg"

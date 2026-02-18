@@ -14,7 +14,7 @@ const contactMethods = [
   {
     icon: Phone,
     title: "Call Us",
-    description: "Speak directly with our IT experts",
+    description: "Talk with a real person who can help",
     contact: "630-394-2700",
     availability: "Mon-Fri 8AM-5PM EST",
   },
@@ -35,7 +35,7 @@ const contactMethods = [
 ]
 
 const services = [
-  "IT Assessment & Consultation",
+  "Technology Clarity Session",
   "24/7 Monitoring Setup",
   "Cybersecurity Evaluation",
   "Cloud Migration Planning",
@@ -87,11 +87,11 @@ export default function ContactPage() {
           <div className="space-y-6 max-w-4xl mx-auto hero-text-panel">
             <Badge className="mb-4 bg-primary/20 text-white border-primary/30">Get In Touch</Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-              Let's Discuss Your <span className="text-primary">IT Needs</span>
+              Tell Us What Is Getting In The Way
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed text-pretty">
-              Ready to transform your technology infrastructure? Our experts are here to help you find the right
-              solutions for your business. Schedule a free consultation today.
+              Bring the problems that are draining time and energy. We will help you find a clear, practical path
+              forward.
             </p>
           </div>
         </div>
@@ -202,7 +202,7 @@ export default function ContactPage() {
                     <Label htmlFor="message">Message</Label>
                     <Textarea
                       id="message"
-                      placeholder="Tell us about your IT needs and challenges..."
+                      placeholder="Tell us where things feel stuck, risky, or harder than they should be..."
                       className="min-h-[120px]"
                     />
                   </div>
@@ -288,8 +288,8 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    Ready to transform your technology infrastructure? Schedule a free 30-minute consultation to discuss
-                    your IT needs and learn how we can help.
+                    Book a free 30-minute conversation and we will help you name the real problems, priorities, and
+                    next best steps.
                   </p>
                   <Button asChild className="w-full">
                     <a href="#contact-form">Schedule Free Consultation</a>
@@ -315,7 +315,7 @@ export default function ContactPage() {
             <Card className="border-border bg-card">
               <CardHeader>
                 <CardTitle className="text-lg text-card-foreground">
-                  How quickly can you respond to IT issues?
+                  How quickly can you respond to technology issues?
                 </CardTitle>
               </CardHeader>
               <CardContent>

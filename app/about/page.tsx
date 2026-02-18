@@ -156,8 +156,8 @@ const serviceHighlights = [
   },
   {
     icon: Compass,
-    title: "IT Strategy & Planning",
-    description: "Strategic technology planning and implementation to align IT with your business objectives.",
+    title: "Technology Strategy & Planning",
+    description: "Strategic technology planning and implementation to align technology with your business objectives.",
   },
 ]
 
@@ -207,11 +207,11 @@ export default function AboutPage() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-                  Your Trusted IT Partner Since <span className="text-primary">2018</span>
+                  Your Trusted Technology Partner Since <span className="text-primary">2018</span>
                 </h1>
                 <p className="text-xl text-white leading-relaxed text-pretty">
                   At 79 Ratio, we believe technology should empower your business, not complicate it. We deliver
-                  comprehensive IT solutions with a personal touch, ensuring your systems run smoothly so you can focus
+                  comprehensive technology solutions with a personal touch, ensuring your systems run smoothly so you can focus
                   on what matters most.
                 </p>
               </div>
@@ -275,7 +275,7 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-12">
             <p className="text-xs tracking-[0.3em] uppercase text-primary font-semibold">Always-On Expertise</p>
-            <h2 className="text-3xl lg:text-4xl font-bold text-white text-balance">Coverage for Every Corner of IT</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-white text-balance">Coverage for Every Corner of Your Technology</h2>
             <p className="text-lg text-white max-w-3xl mx-auto text-pretty">
               Purpose-built services that combine around-the-clock vigilance, resilient infrastructure, and hands-on support.
             </p>
@@ -515,7 +515,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-white leading-relaxed">
                 <p>
-                  Founded in 2018, 79 Ratio emerged from a simple belief: businesses deserve IT partners who understand
+                  Founded in 2018, 79 Ratio emerged from a simple belief: businesses deserve technology partners who understand
                   their unique challenges and deliver solutions that truly work. What started as a small team of
                   passionate technologists has grown into a trusted partner for hundreds of organizations across law,
                   healthcare, nonprofit, and manufacturing sectors.
@@ -526,7 +526,7 @@ export default function AboutPage() {
                   budget, and growth plans.
                 </p>
                 <p>
-                  Today, we're proud to offer comprehensive IT services backed by 24/7/365 monitoring, proactive
+                  Today, we're proud to offer comprehensive technology services backed by 24/7/365 monitoring, proactive
                   support, and a team that treats your success as our own. Every client relationship is built on
                   transparency, reliability, and a genuine commitment to helping your business thrive.
                 </p>
@@ -536,7 +536,7 @@ export default function AboutPage() {
             <div className="relative">
               <Image
                 src="/modern-it-infrastructure-and-server-room.jpg"
-                alt="79 Ratio's modern IT infrastructure"
+                alt="79 Ratio's modern technology infrastructure"
                 width={600}
                 height={400}
                 className="w-full h-auto rounded-2xl shadow-lg"

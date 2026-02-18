@@ -10,6 +10,51 @@ export type BlogPost = {
   contentHtml: string
 }
 
+export type BlogCategory = {
+  label: string
+  slug: string
+  description: string
+}
+
+export const blogCategories: BlogCategory[] = [
+  {
+    label: "Cybersecurity",
+    slug: "cybersecurity",
+    description:
+      "This is about keeping your business safe online. We cover simple steps to prevent hacks, scams, and data theft.",
+  },
+  {
+    label: "Healthcare technology",
+    slug: "healthcare-technology",
+    description:
+      "This is about helping healthcare teams protect patient data and run smoothly. We explain compliance in plain English, without jargon.",
+  },
+  {
+    label: "Cloud Computing",
+    slug: "cloud-computing",
+    description:
+      "This is about moving your tools and files to the cloud so your team can work from anywhere. We show what to move, when to move, and how to avoid downtime.",
+  },
+  {
+    label: "Manufacturing technology",
+    slug: "manufacturing-technology",
+    description:
+      "This is about keeping production running with fewer surprises. We share ways to reduce outages, connect systems, and fix issues before they stop work.",
+  },
+  {
+    label: "Nonprofit technology",
+    slug: "nonprofit-technology",
+    description:
+      "This is about helping nonprofit teams do more with limited budgets. We focus on practical tools that save time, reduce stress, and support your mission.",
+  },
+  {
+    label: "Data Protection",
+    slug: "data-protection",
+    description:
+      "This is about making sure your important data is never one mistake away from being lost. We explain backups, recovery, and what to do when something breaks.",
+  },
+]
+
 export const blogPosts: BlogPost[] = [
   {
     title: "5 Essential Cybersecurity Practices for Law Firms in 2024",
@@ -50,7 +95,7 @@ export const blogPosts: BlogPost[] = [
       "Everything healthcare organizations need to know about HIPAA compliance, from technical safeguards to staff training.",
     author: "Sarah Chen",
     date: "March 10, 2024",
-    category: "Healthcare IT",
+    category: "Healthcare technology",
     readTime: "12 min read",
     featured: true,
     contentHtml: `
@@ -85,13 +130,13 @@ export const blogPosts: BlogPost[] = [
     `,
   },
   {
-    title: "The True Cost of IT Downtime for Manufacturing Companies",
+    title: "The True Cost of Technology Downtime for Manufacturing Companies",
     slug: "cost-it-downtime-manufacturing-companies",
     excerpt:
       "Understanding the financial impact of system failures and how proactive monitoring can prevent costly disruptions.",
     author: "David Thompson",
     date: "February 28, 2024",
-    category: "Manufacturing IT",
+    category: "Manufacturing technology",
     readTime: "6 min read",
     featured: false,
     contentHtml: `
@@ -101,17 +146,17 @@ export const blogPosts: BlogPost[] = [
       <h2>Predictive Monitoring</h2>
       <p>Sensor data combined with AI-based monitoring spots anomalies before they halt production.</p>
       <h2>Playbooks</h2>
-      <p>Document escalation paths that include both IT and operations, ensuring issues are quarantined before spreading.</p>
+      <p>Document escalation paths that include both technology and operations, ensuring issues are quarantined before spreading.</p>
     `,
   },
   {
     title: "Nonprofit Technology: Maximizing Impact with Limited Budgets",
     slug: "nonprofit-technology-maximizing-impact-limited-budgets",
     excerpt:
-      "Cost-effective IT solutions that help nonprofits achieve their mission while staying within budget constraints.",
+      "Cost-effective technology solutions that help nonprofits achieve their mission while staying within budget constraints.",
     author: "Lisa Martinez",
     date: "February 22, 2024",
-    category: "Nonprofit IT",
+    category: "Nonprofit technology",
     readTime: "9 min read",
     featured: false,
     contentHtml: `
@@ -148,4 +193,28 @@ export const blogPosts: BlogPost[] = [
 
 export function getBlogPostBySlug(slug: string) {
   return blogPosts.find((post) => post.slug === slug)
+}
+
+export function getCategoryBySlug(slug: string) {
+  return blogCategories.find((category) => category.slug === slug)
+}
+
+export function getCategorySlug(categoryLabel: string) {
+  const category = blogCategories.find((item) => item.label === categoryLabel)
+  if (category) {
+    return category.slug
+  }
+  return categoryLabel.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
+}
+
+export function getPostsByCategorySlug(slug: string) {
+  const category = getCategoryBySlug(slug)
+  if (!category) {
+    return []
+  }
+  return blogPosts.filter((post) => post.category === category.label)
+}
+
+export function getAllBlogCategorySlugs() {
+  return blogCategories.map((category) => category.slug)
 }

@@ -1,18 +1,26 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Mail, MapPin, Phone } from "lucide-react"
+import { blogCategories } from "@/lib/blog-posts"
 
 export function Footer() {
   return (
     <footer className="bg-black border-t border-border text-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="space-y-4">
             <Link prefetch={false} href="/" className="flex items-center">
-              <Image src="/79ratio-logo.webp" alt="79 Ratio Logo" width={160} height={50} className="h-10 w-auto" priority />
+              <Image
+                src="/79ratio-logo.webp"
+                alt="79 Ratio Logo"
+                width={160}
+                height={50}
+                className="h-10 w-auto brand-logo-subtle-glow"
+                priority
+              />
             </Link>
             <p className="text-muted-foreground text-pretty">
-              Practical IT leadership and support for teams that need stability, stronger security, and room to grow.
+              A steady partner for teams who want fewer fires, clearer decisions, and room to grow.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
@@ -132,6 +140,23 @@ export function Footer() {
                   Talk With Us
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="font-semibold text-card-foreground">Categories</h3>
+            <ul className="space-y-2">
+              {blogCategories.map((category) => (
+                <li key={category.slug}>
+                  <Link
+                    prefetch={false}
+                    href={`/blog/category/${category.slug}`}
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {category.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

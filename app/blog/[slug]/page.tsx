@@ -7,12 +7,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, User, Clock, ArrowLeft, Share2 } from "lucide-react"
-import { blogPosts, getBlogPostBySlug } from "@/lib/blog-posts"
+import { blogPosts, getBlogPostBySlug, getCategorySlug } from "@/lib/blog-posts"
 
 type BlogPostPageProps = {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export const dynamicParams = false
@@ -21,8 +21,9 @@ export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }))
 }
 
-export function generateMetadata({ params }: BlogPostPageProps): Metadata {
-  const post = getBlogPostBySlug(params.slug)
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params
+  const post = getBlogPostBySlug(slug)
 
   if (!post) {
     return {
@@ -37,8 +38,9 @@ export function generateMetadata({ params }: BlogPostPageProps): Metadata {
   }
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = getBlogPostBySlug(params.slug)
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params
+  const post = getBlogPostBySlug(slug)
 
   if (!post) {
     notFound()
@@ -62,7 +64,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             </Button>
 
             <div className="space-y-4">
-              <Badge>{post.category}</Badge>
+              <Link href={`/blog/category/${getCategorySlug(post.category)}`} className="inline-block">
+                <Badge>{post.category}</Badge>
+              </Link>
               <h1 className="text-4xl lg:text-5xl font-bold text-foreground leading-tight text-balance">
                 {post.title}
               </h1>
@@ -136,9 +140,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               {relatedPosts.map((post, index) => (
                 <Card key={index} className="border-border bg-card hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    <Badge variant="secondary" className="w-fit">
-                      {post.category}
-                    </Badge>
+                    <Link href={`/blog/category/${getCategorySlug(post.category)}`} className="w-fit">
+                      <Badge variant="secondary" className="w-fit">
+                        {post.category}
+                      </Badge>
+                    </Link>
                     <CardTitle className="text-lg text-card-foreground hover:text-primary transition-colors">
                       <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                     </CardTitle>

@@ -53,8 +53,8 @@ export function HeroSection() {
             sizes="100vw"
             className="object-cover"
             style={{
-              opacity: 0.8,
-              filter: "brightness(1.02)",
+              opacity: 0.9,
+              filter: "brightness(1.12)",
             }}
           />
         </div>
@@ -69,13 +69,13 @@ export function HeroSection() {
             sizes="100vw"
             className="object-cover"
             style={{
-              opacity: 0.78,
-              filter: "brightness(1.14)",
+              opacity: 0.88,
+              filter: "brightness(1.24)",
             }}
           />
         </div>
         <div className="absolute inset-0 hero-edge-fade pointer-events-none hidden md:block" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/38 via-black/55 to-black/80 md:hidden" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/14 via-black/28 to-black/50 md:hidden" />
 
         <div className="absolute inset-0 hidden md:block">
           <div
@@ -109,7 +109,14 @@ export function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center space-y-12">
           <div className="flex justify-center">
-            <Image src="/79ratio-logo.webp" alt="79 Ratio Logo" width={300} height={100} className="h-16 w-auto" priority />
+            <Image
+              src="/79ratio-logo.webp"
+              alt="79 Ratio Logo"
+              width={300}
+              height={100}
+              className="h-16 w-auto brand-logo-subtle-glow"
+              priority
+            />
           </div>
 
           <div className="space-y-8 max-w-4xl mx-auto hero-text-panel home-hero-panel">

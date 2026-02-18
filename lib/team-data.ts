@@ -4,14 +4,14 @@ export const teamMembers = [
   {
     name: "Michael Rodriguez",
     role: "Chief Technology Officer",
-    bio: "With over 15 years in enterprise IT, Michael leads our technical strategy and ensures we stay ahead of emerging technologies.",
+    bio: "With over 15 years in enterprise technology, Michael leads our technical strategy and ensures we stay ahead of emerging technologies.",
     specialties: ["Cloud Architecture", "Cybersecurity", "Strategic Planning"],
     image: "/professional-male-cto-in-business-attire.jpg",
   },
   {
     name: "Sarah Chen",
     role: "Director of Client Services",
-    bio: "Sarah ensures every client receives exceptional service and support. Her background in healthcare IT brings valuable compliance expertise.",
+    bio: "Sarah ensures every client receives exceptional service and support. Her background in healthcare technology brings valuable compliance expertise.",
     specialties: ["Client Relations", "HIPAA Compliance", "Project Management"],
     image: "/professional-female-director-in-business-attire.jpg",
   },

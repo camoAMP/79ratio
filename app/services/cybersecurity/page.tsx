@@ -50,7 +50,7 @@ export default function CybersecurityPage() {
         <div className="absolute inset-0">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-image"
-            style={{ backgroundImage: "url(/Image_fx (23).jpg)" }}
+            style={{ backgroundImage: "url(/Image_fx (30).jpg)" }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/35 to-black/55" />
         </div>

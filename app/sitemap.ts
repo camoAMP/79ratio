@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next"
+import { blogCategories } from "@/lib/blog-posts"
 
 export const dynamic = "force-static"
 
@@ -15,6 +16,7 @@ const routes = [
   "/industries",
   "/about",
   "/contact",
+  ...blogCategories.map((category) => `/blog/category/${category.slug}`),
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

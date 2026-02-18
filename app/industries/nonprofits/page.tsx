@@ -71,7 +71,7 @@ export default function NonprofitsPage() {
               <div className="space-y-4">
                 <Badge className="mb-4">Nonprofit Expertise</Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-                  Mission-Driven IT for <span className="text-primary">Nonprofits</span>
+                  Mission-Driven technology for <span className="text-primary">Nonprofits</span>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
                   Stretch your funding, protect donor trust, and empower staff and volunteers with technology that simply

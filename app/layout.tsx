@@ -6,9 +6,9 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://79ratio.com"),
-  title: "79 Ratio - Your IT Partner for Seamless Operations",
+  title: "79 Ratio - Calm Technology Guidance for Growing Teams",
   description:
-    "Comprehensive IT solutions for law firms, healthcare, nonprofits, and manufacturing. 24/7 monitoring, cybersecurity, cloud management, and expert support.",
+    "Clear guidance, steady support, and secure systems for law firms, healthcare providers, nonprofits, manufacturers, and many more.",
   robots: {
     index: true,
     follow: true,

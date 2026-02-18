@@ -22,7 +22,7 @@ export default function TeamPage() {
               Meet the <span className="text-primary">79 Ratio Team</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty">
-              Our experienced professionals bring decades of combined expertise in IT strategy, cybersecurity, cloud
+              Our experienced professionals bring decades of combined expertise in technology strategy, cybersecurity, cloud
               solutions, and technical support. Get to know the people dedicated to your success.
             </p>
           </div>

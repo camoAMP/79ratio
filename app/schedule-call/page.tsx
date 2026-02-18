@@ -48,11 +48,11 @@ export default function ScheduleCallPage() {
           <div className="space-y-8 max-w-4xl mx-auto hero-text-panel">
             <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">Schedule Your Consultation</Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight text-balance">
-              Let's Discuss Your <span className="text-primary">Technology Needs</span>
+              Let&apos;s Talk Through What&apos;s Not Working
             </h1>
             <p className="text-xl text-white leading-relaxed text-pretty max-w-3xl mx-auto">
-              Schedule a personalized consultation with our IT experts to discover how 79 Ratio can transform your
-              business technology infrastructure.
+              In one focused conversation, we can turn noise into clarity and map out practical next steps for your
+              team.
             </p>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function ScheduleCallPage() {
                   <Phone className="w-8 h-8 text-primary" />
                 </div>
                 <CardTitle>Phone Consultation</CardTitle>
-                <CardDescription>Quick 30-minute phone call to discuss your immediate IT needs</CardDescription>
+                <CardDescription>Quick 30-minute call to discuss your immediate operational pain points</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground">
@@ -86,7 +86,7 @@ export default function ScheduleCallPage() {
                 <div className="space-y-2">
                   <div className="flex items-center space-x-2 text-sm">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>IT assessment overview</span>
+                    <span>Technology clarity overview</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <CheckCircle className="w-4 h-4 text-primary" />
@@ -120,7 +120,7 @@ export default function ScheduleCallPage() {
                 <div className="space-y-2">
                   <div className="flex items-center space-x-2 text-sm">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Detailed IT infrastructure review</span>
+                    <span>Detailed technology environment review</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <CheckCircle className="w-4 h-4 text-primary" />
@@ -174,7 +174,7 @@ export default function ScheduleCallPage() {
 
           {/* Contact Information */}
           <div className="text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Begin Your IT Transformation?</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Ready To Feel More In Control?</h3>
             <p className="text-lg text-muted-foreground mb-8">
               Contact us directly to schedule your consultation today.
             </p>
