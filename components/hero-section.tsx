@@ -32,77 +32,21 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden py-16 lg:py-32 bg-black">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 md:hidden">
-          <Image
-            src="/home-mobile.webp"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
-        </div>
-        <div className="absolute inset-0 hidden md:block">
-          <Image
-            src="/home.webp"
-            alt=""
-            fill
-            priority
-            loading="eager"
-            fetchPriority="high"
-            sizes="100vw"
-            className="object-cover"
-            style={{
-              opacity: 0.9,
-              filter: "brightness(1.12)",
-            }}
-          />
-        </div>
-        <div className="pointer-events-none absolute inset-0 hidden md:block home-hero-spiral-core animate-spiral-center-rotate">
-          <Image
-            src="/home.webp"
-            alt=""
-            fill
-            priority
-            loading="eager"
-            fetchPriority="high"
-            sizes="100vw"
-            className="object-cover"
-            style={{
-              opacity: 0.88,
-              filter: "brightness(1.24)",
-            }}
-          />
-        </div>
-        <div className="absolute inset-0 hero-edge-fade pointer-events-none hidden md:block" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/14 via-black/28 to-black/50 md:hidden" />
-
-        <div className="absolute inset-0 hidden md:block">
-          <div
-            className="absolute top-1/4 left-1/4 w-3 h-3 bg-primary rounded-full animate-float opacity-80"
-            style={{ animationDelay: "0s" }}
-          />
-          <div
-            className="absolute top-1/3 right-1/3 w-2 h-2 bg-cyan-400 rounded-full animate-float-slow opacity-60"
-            style={{ animationDelay: "1s" }}
-          />
-          <div
-            className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-primary/40 rounded-full animate-float opacity-50"
-            style={{ animationDelay: "2s" }}
-          />
-          <div
-            className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-cyan-300 rounded-full animate-float-slow opacity-70"
-            style={{ animationDelay: "0.5s" }}
-          />
-          <div
-            className="absolute top-3/4 left-1/2 w-2.5 h-2.5 bg-primary/60 rounded-full animate-float opacity-40"
-            style={{ animationDelay: "1.5s" }}
-          />
-          <div
-            className="absolute bottom-1/3 right-1/2 w-1 h-1 bg-cyan-200 rounded-full animate-float-slow opacity-80"
-            style={{ animationDelay: "2.5s" }}
-          />
-        </div>
+        <Image
+          src="/home3.png"
+          alt=""
+          fill
+          priority
+          loading="eager"
+          fetchPriority="high"
+          sizes="100vw"
+          className="object-cover"
+          style={{
+            opacity: 0.9,
+            filter: "brightness(1.2)",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/18 via-black/30 to-black/52" />
       </div>
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-28 bg-gradient-to-b from-transparent via-black/80 to-black" />
 
@@ -142,14 +86,13 @@ export function HeroSection() {
             </div>
 
             <div className="grid w-full grid-cols-1 gap-4 pt-8 justify-items-center sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
-              {highlights.map((item, index) => {
+              {highlights.map((item) => {
                 const Icon = item.icon
 
                 return (
                   <div
                     key={item.title}
-                    className="flex w-full max-w-[220px] items-center justify-center gap-3 animate-fade-in sm:justify-start"
-                    style={{ animationDelay: `${(index + 1) * 0.2}s` }}
+                    className="flex w-full max-w-[220px] items-center justify-center gap-3 sm:justify-start"
                   >
                     <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center border border-primary/30">
                       <Icon className="w-5 h-5 text-primary" />
