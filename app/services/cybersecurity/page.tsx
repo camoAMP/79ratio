@@ -92,7 +92,7 @@ export default function CybersecurityPage() {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
                 <Image
-                  src="/cybersecurity-dashboard-showing-threat-detection.jpg"
+                  src="/Image_fx (26).jpg"
                   alt="Cybersecurity dashboard showing threat detection and network protection"
                   width={800}
                   height={800}

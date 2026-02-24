@@ -135,9 +135,6 @@ export default function WhoWeAreForPage() {
                         <div className="flex flex-col gap-2 text-center">
                           <h3 className="text-2xl font-semibold text-card-foreground">Do We Match?</h3>
                           <p className="text-sm text-muted-foreground">
-                            Many clients start with a simple conversation before making any commitment.
-                          </p>
-                          <p className="text-sm text-muted-foreground">
                             We evaluate fit based on your stage, current challenge, desired support, and whether our approach matches how your team works.
                           </p>
                           <p className="text-xs uppercase tracking-[0.14em] text-primary font-medium">

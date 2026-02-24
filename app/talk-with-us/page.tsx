@@ -56,6 +56,23 @@ export default function TalkWithUsPage() {
         </div>
       </section>
 
+      <section className="py-16 bg-background">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance mb-4">Ready to start the conversation?</h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty mb-8">
+            We can talk through your situation, discuss next steps, or help you understand where to begin.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg">
+              <Link href="#contact-form">Start the Conversation</Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <Link href="/challenges">Explore Your Options</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           {sections

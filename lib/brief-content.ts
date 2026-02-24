@@ -578,18 +578,18 @@ export const challengesContent: Record<ChallengeSlug, ChallengeContent> = {
 export const challengesIntro = {
   headline: "Challenges We Solve",
   subheadline:
-    "Most teams are not blocked by one broken tool. They are dealing with system strain that built up slowly.",
+    "Tech problems are rarely isolated. They build slowly as systems evolve without structure.",
   body:
-    "Use these pages to spot your pattern, understand why it happens, and see what changes when the root cause is addressed.",
+    "These pages help you identify the pattern and what changes when it's addressed.",
 }
 
 export const ourApproachContent: SectionBlock[] = [
   {
     id: "entry",
     title: "Entry",
-    heading: "Our approach is designed for stability, not firefighting.",
+    heading: "Our approach is designed for long-term stability",
     intro:
-      "Technology works best when it is treated as one connected system: designed intentionally, managed continuously, and improved without chaos.",
+      "Technology works best when it is treated as one connected system: designed intentionally, managed continuallyu, and improved with clarity",
   },
   {
     id: "why-most-approaches-fall-short",
@@ -611,7 +611,7 @@ export const ourApproachContent: SectionBlock[] = [
     bullets: [
       "Look for structure, not symptoms",
       "Focus on interactions, not just components",
-      "Design for future pressure, not just present comfort",
+      "Design for evolving demands, not static conditions",
     ],
   },
   {
@@ -636,7 +636,7 @@ export const ourApproachContent: SectionBlock[] = [
       "The goal is resilience, clarity, and confidence, not security theater.",
     ],
     bullets: [
-      "Reduce risk through design, not only detection",
+      "Understand how systems work together, not just individually",
       "Align controls with real business exposure",
       "Make compliance sustainable, not episodic",
       "Keep risk visible at the leadership level",
@@ -715,7 +715,7 @@ export const ourApproachContent: SectionBlock[] = [
   },
   {
     id: "close",
-    title: "Close",
+    title: "",
     body: [
       "Technology does not need to be flashy. It needs to be dependable.",
       "When systems are built to last, everything else gets easier.",
@@ -830,7 +830,7 @@ export const whoWeAreForContent: SectionBlock[] = [
   },
   {
     id: "close",
-    title: "Close",
+    title: "",
     body: [
       "The right technology partner does more than solve tickets. They fit how your organization thinks and operates.",
       "When that alignment exists, everything works better.",
